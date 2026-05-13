@@ -9,7 +9,8 @@ points:
         c1:
         c2:
         c3:
-          key.stagger: u*1.3
+          key:
+            stagger: u/2
           rows:
             r0.skip: true
         c4:
@@ -17,7 +18,7 @@ points:
           rows:
             r0.skip: true
         c5:
-          key.stagger: -u/4
+          key.stagger: -u/2
           rows:
             r0.skip: true
         c6:
@@ -28,11 +29,10 @@ points:
         r3:
         r2:
         r1:
-        r0:
     thumbfan:
       anchor:
         - ref: matrix_c4_r3
-          shift: [9.5,-25]
+          shift: [9.5,-30]
       columns:
         c4:
         c5.key:
