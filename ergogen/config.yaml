@@ -14,11 +14,11 @@ points:
           rows:
             r0.skip: true
         c4:
-          key.stagger: u/2
+          key.stagger: u/4
           rows:
             r0.skip: true
         c5:
-          key.stagger: -u/2
+          key.stagger: -u/4
           rows:
             r0.skip: true
         c6:
