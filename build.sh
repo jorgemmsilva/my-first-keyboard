@@ -5,7 +5,7 @@ container_cmd=docker
 container_args="-w /board -v $(pwd):/board --rm"
 
 # Define the boards to autoroute and export, and the plates
-boards="my_first_keyboard"
+boards="my_first_keyboard_wireless"
 plates="backplate frontplate controller_overlay"
 
 # Define the KiCad Auto Docker image to use
@@ -34,7 +34,7 @@ if [ -e logs/freerouting.log ]; then
 fi
 
 # Generate unrouted PCBs with Ergogen (definition in package.json)
-npm run debug
+pnpm run debug
 
 # Restore manually routed files
 if [ -e ergogen/tmp/*_manually_routed.kicad_pcb ]; then
@@ -87,5 +87,5 @@ do
 done
 
 # Docker runs as root and causes issues with file ownership
-sudo chown $USER -R ergogen
-sudo chown $USER -R freerouting
+# sudo chown $USER -R ergogen
+# sudo chown $USER -R freerouting

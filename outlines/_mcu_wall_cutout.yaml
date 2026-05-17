@@ -1,0 +1,52 @@
+models:
+    export:
+        models:
+            a:
+                models: {}
+                origin:
+                    - 0
+                    - 0
+            b:
+                paths:
+                    ShapeLine1:
+                        type: line
+                        origin:
+                            - 210.779
+                            - -74.74166670000001
+                        end:
+                            - 218.779
+                            - -74.74166670000001
+                    ShapeLine2:
+                        type: line
+                        origin:
+                            - 218.779
+                            - -74.74166670000001
+                        end:
+                            - 218.779
+                            - -31.84166670000001
+                    ShapeLine3:
+                        type: line
+                        origin:
+                            - 218.779
+                            - -31.84166670000001
+                        end:
+                            - 210.779
+                            - -31.84166670000001
+                    ShapeLine4:
+                        type: line
+                        origin:
+                            - 210.779
+                            - -31.84166670000001
+                        end:
+                            - 210.779
+                            - -74.74166670000001
+                origin:
+                    - 0
+                    - 0
+        origin:
+            - 0
+            - 0
+units: mm
+origin:
+    - 0
+    - 0

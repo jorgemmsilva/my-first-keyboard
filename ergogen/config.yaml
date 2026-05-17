@@ -1,10 +1,7 @@
 meta:
   engine: 4.1.0
-  name: corney-island
-  version: 0.3 # Choc v2 POM switches variant
-  ref: &kb_ref "Corney Island v0.3"
-  author: ceoloide
-  url: &kb_url https://github.com/ceoloide/corney-island
+  name: my-first-keyboard
+  version: 0.1
   # footprint: &switch_footprint "ceoloide/switch_mx"
   footprint: &switch_footprint "ceoloide/switch_choc_v1_v2"
   switch:
@@ -214,7 +211,7 @@ points:
       columns:
         near:
           key:
-            column_net: C3
+            column_net: C2
           rows:
             home.key:
               led_prev: LED_8
@@ -222,7 +219,7 @@ points:
         mid:
           key:
             splay: -splay_thumb_middle
-            column_net: C4
+            column_net: C3
             spread: ks + 1.6
             stagger: -2.5
           rows:
@@ -232,7 +229,7 @@ points:
         far:
           key:
             splay: -splay_thumb_far
-            column_net: C5
+            column_net: C4
             spread: ks + 1.6
             stagger: -2.5
             tags:
@@ -246,7 +243,7 @@ points:
         farest:
           key:
             splay: -splay_thumb_far2
-            column_net: C6
+            column_net: C5
             spread: ks + 1.6
             stagger: -2.5
             tags:
@@ -754,7 +751,7 @@ pcbs:
           hole_size: screw_diameter
           hole_drill: screw_diameter
 
-  _corney_island_baseline:
+  _my_first_keyboard_baseline:
     template: kicad8
     outlines: &basepcb_outlines
       main:
@@ -899,91 +896,91 @@ pcbs:
         adjust:
           shift: [0, -0.65 kp]
   
-  corney_island:
-    template: kicad8
+  # my_first_keyboard:
+  #   template: kicad8
+  #
+  #   outlines:
+  #     <<: *basepcb_outlines
+  #
+  #   footprints:
+  #     <<: *basepcb_footprints
+  #
+  #     display:
+  #       what: ceoloide/display_ssd1306
+  #       where: matrix_inner_top
+  #       params:
+  #         reversible: true
+  #       adjust:
+  #         shift: [0.5 ks + 10.147, 0.375 kp -24.058]
+  #
+  #     reset_switch:
+  #       what: ceoloide/reset_switch_tht_top
+  #       where: matrix_inner_top
+  #       params:
+  #         from: GND
+  #         to: RST
+  #         reversible: true
+  #       adjust:
+  #         shift: [0.5 ks + 17.85, 0.375 kp -40.251]
+  #         rotate: 90
+  #
+  #     trrs:
+  #       what: ceoloide/trrs_pj320a
+  #       where: matrix_inner_top
+  #       params:
+  #         SL: GND
+  #         R2: DAT
+  #         TP: VCC # Tip and Ring 1 are joined together
+  #         reversible: true
+  #         symmetric: true
+  #       adjust:
+  #         shift: [0.5 ks +19.61, 0.375 kp -50.31]
+  #         rotate: -90
+  #
+  #     per_key_leds:
+  #       what: ceoloide/led_sk6812mini-e
+  #       where: /key/
+  #       params:
+  #         P1: VCC
+  #         P2: "{{key.led_next}}" #DOUT
+  #         P3: GND
+  #         P4: "{{key.led_prev}}" #DIN
+  #         reversible: true
+  #         reverse_mount: true
+  #         include_traces_vias: true
+  #         via_size: via_size
+  #         via_drill: via_drill
+  #         include_keepout: false
+  #         include_courtyard: false
+  #         signal_trace_width: signal_trace_width
+  #         gnd_trace_width: gnd_trace_width
+  #         vcc_trace_width: pwr_trace_width
+  #       adjust:
+  #         shift: [led_pos_x, led_pos_y]
+  #         rotate: led_rotation
+  #
+  #     underglow_leds:
+  #       what: ceoloide/led_sk6812mini-e
+  #       where: [underglow]
+  #       params:
+  #         P1: VCC
+  #         P2: "{{zone.key.dout}}" #DOUT
+  #         P3: GND
+  #         P4: "{{zone.key.din}}" #DIN
+  #         reversible: true
+  #         reverse_mount: false
+  #         include_traces_vias: true
+  #         via_size: via_size
+  #         via_drill: via_drill
+  #         include_keepout: false
+  #         include_courtyard: false
+  #         signal_trace_width: signal_trace_width
+  #         gnd_trace_width: gnd_trace_width
+  #         vcc_trace_width: pwr_trace_width
+  #       adjust:
+  #         rotate: 180
 
-    outlines:
-      <<: *basepcb_outlines
-        
-    footprints:
-      <<: *basepcb_footprints
-
-      display:
-        what: ceoloide/display_ssd1306
-        where: matrix_inner_top
-        params:
-          reversible: true
-        adjust:
-          shift: [0.5 ks + 10.147, 0.375 kp -24.058]
-
-      reset_switch:
-        what: ceoloide/reset_switch_tht_top
-        where: matrix_inner_top
-        params:
-          from: GND
-          to: RST
-          reversible: true
-        adjust:
-          shift: [0.5 ks + 17.85, 0.375 kp -40.251]
-          rotate: 90
-
-      trrs:
-        what: ceoloide/trrs_pj320a
-        where: matrix_inner_top
-        params:
-          SL: GND
-          R2: DAT
-          TP: VCC # Tip and Ring 1 are joined together
-          reversible: true
-          symmetric: true
-        adjust:
-          shift: [0.5 ks +19.61, 0.375 kp -50.31]
-          rotate: -90
-          
-      per_key_leds:
-        what: ceoloide/led_sk6812mini-e
-        where: /key/
-        params:
-          P1: VCC
-          P2: "{{key.led_next}}" #DOUT
-          P3: GND
-          P4: "{{key.led_prev}}" #DIN
-          reversible: true
-          reverse_mount: true
-          include_traces_vias: true
-          via_size: via_size
-          via_drill: via_drill
-          include_keepout: false
-          include_courtyard: false
-          signal_trace_width: signal_trace_width
-          gnd_trace_width: gnd_trace_width
-          vcc_trace_width: pwr_trace_width
-        adjust:
-          shift: [led_pos_x, led_pos_y]
-          rotate: led_rotation
-      
-      underglow_leds:
-        what: ceoloide/led_sk6812mini-e
-        where: [underglow]
-        params:
-          P1: VCC
-          P2: "{{zone.key.dout}}" #DOUT
-          P3: GND
-          P4: "{{zone.key.din}}" #DIN
-          reversible: true
-          reverse_mount: false
-          include_traces_vias: true
-          via_size: via_size
-          via_drill: via_drill
-          include_keepout: false
-          include_courtyard: false
-          signal_trace_width: signal_trace_width
-          gnd_trace_width: gnd_trace_width
-          vcc_trace_width: pwr_trace_width
-        adjust:
-          rotate: 180
-
-  corney_island_wireless:
+  my_first_keyboard_wireless:
     template: kicad8
     
     outlines:
@@ -1037,7 +1034,7 @@ pcbs:
           shift: [0.5 ks + 7.25, 0.375 kp -45.25]
           rotate: 90
 cases:
-  corney_island_bottom_tray:
+  my_first_keyboard_bottom_tray:
     - what: outline
       name: _bottom_case_walls
       extrude: bottom_plate_thickness + internal_distance_between_plates + top_plate_thickness

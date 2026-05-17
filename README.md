@@ -1,15 +1,6 @@
-# my-first-keyboard
+# My first keyboard
 
-To install dependencies:
 
-```bash
-bun install
-```
+My first attempt at designing my own keyboard.
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.6. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+I used [corney-island](https://github.com/ceoloide/corney-island/blob/main/package.json) as the base for this build.

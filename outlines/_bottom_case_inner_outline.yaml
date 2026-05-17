@@ -1,0 +1,316 @@
+models:
+    export:
+        models:
+            '0':
+                paths:
+                    p1_Top:
+                        type: line
+                        origin:
+                            - 90.832
+                            - -109.24000889999999
+                        end:
+                            - 90.83
+                            - -52.99000889999999
+                    p1_EndCap_ShapeLine2:
+                        type: line
+                        origin:
+                            - 90.8299911
+                            - -52.73993419999999
+                        end:
+                            - 90.83
+                            - -52.99000889999999
+                    p1_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 90.8299911
+                            - -52.73993419999999
+                        end:
+                            - 128.3298684
+                            - -52.74980257963158
+                    p3_Top:
+                        type: line
+                        origin:
+                            - 128.83
+                            - -52.249802579631584
+                        end:
+                            - 128.83
+                            - -43.239209200000005
+                    p3_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 128.83
+                            - -43.239209200000005
+                        end:
+                            - 147.32842105000051
+                            - -43.297625299631584
+                    p5_Top:
+                        type: line
+                        origin:
+                            - 147.83
+                            - -42.797627799789474
+                        end:
+                            - 147.83
+                            - -38.613
+                    p5_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 147.83
+                            - -38.613
+                        end:
+                            - 166.332
+                            - -38.613
+                    p6_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 166.332
+                            - -41.19828757386266
+                        end:
+                            - 166.332
+                            - -38.613
+                    p8_Top:
+                        type: line
+                        origin:
+                            - 166.8331403499997
+                            - -41.69828627374862
+                        end:
+                            - 185.332
+                            - -41.656095900000004
+                    p8_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 185.332
+                            - -43.65466670000001
+                        end:
+                            - 185.332
+                            - -41.656095900000004
+                    p10_Top:
+                        type: line
+                        origin:
+                            - 185.832
+                            - -44.15466670000001
+                        end:
+                            - 204.331889
+                            - -44.15466670000001
+                    p10_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 204.332
+                            - -44.40455570000001
+                        end:
+                            - 204.331889
+                            - -44.15466670000001
+                    p11_Top:
+                        type: line
+                        origin:
+                            - 204.332
+                            - -44.40455570000001
+                        end:
+                            - 204.33266711056834
+                            - -45.90688869997393
+                    p2_Top_1:
+                        type: line
+                        origin:
+                            - 204.83266711056834
+                            - -46.40666670000001
+                        end:
+                            - 225.083
+                            - -46.40666670000001
+                    p2_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 225.083
+                            - -107.184654
+                        end:
+                            - 225.083
+                            - -46.40666670000001
+                    p3_EndCap_ShapeLine1_1:
+                        type: line
+                        origin:
+                            - 224.85389989346558
+                            - -107.58146710488614
+                        end:
+                            - 225.083
+                            - -107.184654
+                    p14_Top:
+                        type: line
+                        origin:
+                            - 224.78906738841857
+                            - -107.87783635069945
+                        end:
+                            - 227.2262154
+                            - -134.0443563
+                    p14_EndCap_ShapeLine2:
+                        type: line
+                        origin:
+                            - 227.2371058
+                            - -134.1612813
+                        end:
+                            - 227.22621539999997
+                            - -134.0443563
+                    p14_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 213.98915549999998
+                            - -147.4092317
+                        end:
+                            - 227.2371058
+                            - -134.1612813
+                    p15_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 200.3085959578651
+                            - -133.72867215786508
+                        end:
+                            - 213.98915549999998
+                            - -147.4092317
+                    p17_Top:
+                        type: line
+                        origin:
+                            - 200.20046009852894
+                            - -133.64659932443703
+                        end:
+                            - 184.23413723074154
+                            - -124.65169604417395
+                    p18_Top:
+                        type: line
+                        origin:
+                            - 184.1134222431878
+                            - -124.60312266552577
+                        end:
+                            - 166.60958557900256
+                            - -120.09511957998336
+                    p19_Top:
+                        type: line
+                        origin:
+                            - 146.81301820000002
+                            - -120.1255815
+                        end:
+                            - 166.48370712589244
+                            - -120.07932059205956
+                    p19_EndCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 146.8100184
+                            - -119.8780293
+                        end:
+                            - 146.81301820000002
+                            - -120.1255815
+                    p20_Top:
+                        type: line
+                        origin:
+                            - 146.8100184
+                            - -119.8780293
+                        end:
+                            - 146.69394567565914
+                            - -110.29970808739381
+                    p21_Top:
+                        type: line
+                        origin:
+                            - 90.8320088
+                            - -109.48857179999999
+                        end:
+                            - 146.19684697565913
+                            - -109.80577498739389
+                    p1_StartCap_ShapeLine1:
+                        type: line
+                        origin:
+                            - 90.832
+                            - -109.24000889999999
+                        end:
+                            - 90.8320088
+                            - -109.48857179999999
+                origin:
+                    - 0
+                    - 0
+            fillet_0_0:
+                paths:
+                    fillet0:
+                        origin:
+                            - 128.33
+                            - -52.249802579631584
+                        radius: 0.5
+                        startAngle: 269.98491975118003
+                        endAngle: 0
+                        type: arc
+                    fillet1:
+                        origin:
+                            - 147.33
+                            - -42.797627799789474
+                        radius: 0.5
+                        startAngle: 269.81906535465106
+                        endAngle: 0
+                        type: arc
+                    fillet2:
+                        origin:
+                            - 166.832
+                            - -41.19828757386266
+                        radius: 0.5
+                        startAngle: 180
+                        endAngle: 270.1306745975128
+                        type: arc
+                    fillet3:
+                        origin:
+                            - 185.832
+                            - -43.65466670000001
+                        radius: 0.5
+                        startAngle: 180
+                        endAngle: 270
+                        type: arc
+                    fillet4:
+                        origin:
+                            - 204.83266711056834
+                            - -45.90666669997154
+                        radius: 0.5
+                        startAngle: 180.0254393247066
+                        endAngle: 270
+                        type: arc
+                    fillet5:
+                        origin:
+                            - 225.28691259346556
+                            - -107.83146710488626
+                        radius: 0.5
+                        startAngle: 149.99999989157126
+                        endAngle: 185.32117070636545
+                        type: arc
+                    fillet6:
+                        origin:
+                            - 199.95504255786506
+                            - -134.08222555786506
+                        radius: 0.5
+                        startAngle: 44.999999999995396
+                        endAngle: 60.60451516488776
+                        type: arc
+                    fillet7:
+                        origin:
+                            - 183.98871969007766
+                            - -125.08732227760197
+                        radius: 0.5
+                        startAngle: 60.60451516488776
+                        endAngle: 75.55768749770606
+                        type: arc
+                    fillet8:
+                        origin:
+                            - 166.48488302589243
+                            - -120.57931919205956
+                        radius: 0.5
+                        startAngle: 75.55768749770921
+                        endAngle: 90.13474834312368
+                        type: arc
+                    fillet9:
+                        origin:
+                            - 146.19398237565915
+                            - -110.30576678739453
+                        radius: 0.5
+                        startAngle: 0.6942928573598178
+                        endAngle: 89.67173922814833
+                        type: arc
+                origin:
+                    - 0
+                    - 0
+        origin:
+            - 0
+            - 0
+units: mm
+origin:
+    - 0
+    - 0

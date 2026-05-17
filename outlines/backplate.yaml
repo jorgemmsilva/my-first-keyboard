@@ -1,0 +1,519 @@
+models:
+    export:
+        models:
+            a:
+                models:
+                    a:
+                        models: {}
+                        origin:
+                            - 0
+                            - 0
+                    b:
+                        models:
+                            a:
+                                models:
+                                    a:
+                                        models: {}
+                                        origin:
+                                            - 0
+                                            - 0
+                                    b:
+                                        models:
+                                            a:
+                                                models:
+                                                    a:
+                                                        models: {}
+                                                        origin:
+                                                            - 0
+                                                            - 0
+                                                    b:
+                                                        models:
+                                                            a:
+                                                                models: {}
+                                                                origin:
+                                                                    - 0
+                                                                    - 0
+                                                            b:
+                                                                paths:
+                                                                    p1:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 91.08198232441418
+                                                                            - -108.7428741492331
+                                                                        end:
+                                                                            - 91.08001778309044
+                                                                            - -53.49014941882342
+                                                                    p2:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 91.58014938309049
+                                                                            - -52.99013161825871
+                                                                        end:
+                                                                            - 128.5798684
+                                                                            - -52.99986838642105
+                                                                    p3:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 129.08
+                                                                            - -52.499868386421056
+                                                                        end:
+                                                                            - 129.08
+                                                                            - -43.991581433368424
+                                                                    p4:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 129.5815789499995
+                                                                            - -43.491583933526314
+                                                                        end:
+                                                                            - 147.57842105000054
+                                                                            - -43.54841606647368
+                                                                    p5:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 148.08
+                                                                            - -43.048418566631575
+                                                                        end:
+                                                                            - 148.08
+                                                                            - -39.363
+                                                                    p6:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 148.58
+                                                                            - -38.863
+                                                                        end:
+                                                                            - 165.582
+                                                                            - -38.863
+                                                                    p7:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 166.082
+                                                                            - -39.363
+                                                                        end:
+                                                                            - 166.082
+                                                                            - -41.448858349317796
+                                                                    p8:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 166.58314034999975
+                                                                            - -41.94885704920376
+                                                                        end:
+                                                                            - 184.58085965000026
+                                                                            - -41.90780965079625
+                                                                    p9:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 185.082
+                                                                            - -42.407808350682224
+                                                                        end:
+                                                                            - 185.082
+                                                                            - -43.90466670000001
+                                                                    p10:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 185.582
+                                                                            - -44.40466670000001
+                                                                        end:
+                                                                            - 203.58222192628773
+                                                                            - -44.40466670000001
+                                                                    p11:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 204.08222192628773
+                                                                            - -44.90444469999056
+                                                                        end:
+                                                                            - 204.08277807371226
+                                                                            - -46.15688869997393
+                                                                    p14:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 224.518
+                                                                            - -107.6632627
+                                                                        end:
+                                                                            - 226.955512020241
+                                                                            - -133.83369084027163
+                                                                    p15:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 226.81122021519408
+                                                                            - -134.23361348608455
+                                                                        end:
+                                                                            - 214.34270889863896
+                                                                            - -146.7021248986389
+                                                                    p16:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 213.6356020986389
+                                                                            - -146.7021248986389
+                                                                        end:
+                                                                            - 200.4611502052433
+                                                                            - -133.52767300524332
+                                                                    p17:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 200.3530143459072
+                                                                            - -133.44560017181533
+                                                                        end:
+                                                                            - 184.3282609007157
+                                                                            - -124.41777901830663
+                                                                    p18:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 184.20754591316194
+                                                                            - -124.36920563965845
+                                                                        end:
+                                                                            - 166.6409724373401
+                                                                            - -119.84504508270788
+                                                                    p19:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 166.5150939842299
+                                                                            - -119.82924609478405
+                                                                        end:
+                                                                            - 147.55513938960334
+                                                                            - -119.87383554606733
+                                                                    p20:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 147.05400018960333
+                                                                            - -119.37989564606505
+                                                                        end:
+                                                                            - 146.9409515166998
+                                                                            - -110.0511191580681
+                                                                    p21:
+                                                                        type: line
+                                                                        origin:
+                                                                            - 146.4438528166998
+                                                                            - -109.55718605806929
+                                                                        end:
+                                                                            - 91.57911772441417
+                                                                            - -109.24284814910233
+                                                                origin:
+                                                                    - 0
+                                                                    - 0
+                                                        origin:
+                                                            - 0
+                                                            - 0
+                                                origin:
+                                                    - 0
+                                                    - 0
+                                            b:
+                                                paths:
+                                                    p2:
+                                                        type: line
+                                                        origin:
+                                                            - 204.58277807371223
+                                                            - -46.65666670000001
+                                                        end:
+                                                            - 224.333
+                                                            - -46.65666670000001
+                                                    p3:
+                                                        type: line
+                                                        origin:
+                                                            - 224.833
+                                                            - -47.15666670000001
+                                                        end:
+                                                            - 224.833
+                                                            - -106.98369210612947
+                                                    p4:
+                                                        type: line
+                                                        origin:
+                                                            - 224.76601270000006
+                                                            - -107.23369210612935
+                                                        end:
+                                                            - 224.518
+                                                            - -107.6632627
+                                                origin:
+                                                    - 0
+                                                    - 0
+                                        origin:
+                                            - 0
+                                            - 0
+                                origin:
+                                    - 0
+                                    - 0
+                            b:
+                                models:
+                                    a:
+                                        models: {}
+                                        origin:
+                                            - 0
+                                            - 0
+                                    b:
+                                        paths: {}
+                                        origin:
+                                            - 0
+                                            - 0
+                                origin:
+                                    - 0
+                                    - 0
+                        origin:
+                            - 0
+                            - 0
+                    fillet_0_0:
+                        paths:
+                            fillet0:
+                                origin:
+                                    - 91.58001778309043
+                                    - -53.49013161845505
+                                radius: 0.5
+                                startAngle: 89.98491975117942
+                                endAngle: 180.00203977196173
+                                type: arc
+                            fillet1:
+                                origin:
+                                    - 128.58
+                                    - -52.499868386421056
+                                radius: 0.5
+                                startAngle: 269.98491975118003
+                                endAngle: 0
+                                type: arc
+                            fillet2:
+                                origin:
+                                    - 129.58
+                                    - -43.991581433368424
+                                radius: 0.5
+                                startAngle: 89.81906535465099
+                                endAngle: 180
+                                type: arc
+                            fillet3:
+                                origin:
+                                    - 147.58
+                                    - -43.048418566631575
+                                radius: 0.5
+                                startAngle: 269.8190653546543
+                                endAngle: 0
+                                type: arc
+                            fillet4:
+                                origin:
+                                    - 148.58
+                                    - -39.363
+                                radius: 0.5
+                                startAngle: 90
+                                endAngle: 180
+                                type: arc
+                            fillet5:
+                                origin:
+                                    - 165.582
+                                    - -39.363
+                                radius: 0.5
+                                startAngle: 0
+                                endAngle: 90
+                                type: arc
+                            fillet6:
+                                origin:
+                                    - 166.582
+                                    - -41.448858349317796
+                                radius: 0.5
+                                startAngle: 180
+                                endAngle: 270.13067459751926
+                                type: arc
+                            fillet7:
+                                origin:
+                                    - 184.582
+                                    - -42.407808350682224
+                                radius: 0.5
+                                startAngle: 0
+                                endAngle: 90.13067459751602
+                                type: arc
+                            fillet8:
+                                origin:
+                                    - 185.582
+                                    - -43.90466670000001
+                                radius: 0.5
+                                startAngle: 180
+                                endAngle: 270
+                                type: arc
+                            fillet9:
+                                origin:
+                                    - 203.58222192628773
+                                    - -44.90466670000001
+                                radius: 0.5
+                                startAngle: 0.025439325514330906
+                                endAngle: 90
+                                type: arc
+                            fillet10:
+                                origin:
+                                    - 204.58277807371223
+                                    - -46.15666669997154
+                                radius: 0.5
+                                startAngle: 180.0254393247066
+                                endAngle: 270
+                                type: arc
+                            fillet11:
+                                origin:
+                                    - 224.333
+                                    - -47.15666670000001
+                                radius: 0.5
+                                startAngle: 0
+                                endAngle: 90
+                                type: arc
+                            fillet12:
+                                origin:
+                                    - 224.333
+                                    - -106.98369210612947
+                                radius: 0.5
+                                startAngle: 329.99999989159875
+                                endAngle: 0
+                                type: arc
+                            fillet13:
+                                origin:
+                                    - 226.45766681519402
+                                    - -133.88006008608454
+                                radius: 0.5
+                                startAngle: 315.0000000000046
+                                endAngle: 5.321170706332999
+                                type: arc
+                            fillet14:
+                                origin:
+                                    - 213.98915549863892
+                                    - -146.34857149863888
+                                radius: 0.5
+                                startAngle: 225.00000000000227
+                                endAngle: 315
+                                type: arc
+                            fillet15:
+                                origin:
+                                    - 200.10759680524333
+                                    - -133.88122640524335
+                                radius: 0.5
+                                startAngle: 45.000000000004604
+                                endAngle: 60.60451516488776
+                                type: arc
+                            fillet16:
+                                origin:
+                                    - 184.08284336005178
+                                    - -124.85340525173464
+                                radius: 0.5
+                                startAngle: 60.604515164884134
+                                endAngle: 75.55768749770606
+                                type: arc
+                            fillet17:
+                                origin:
+                                    - 166.51626988422993
+                                    - -120.32924469478405
+                                radius: 0.5
+                                startAngle: 75.55768749770209
+                                endAngle: 90.13474834312693
+                                type: arc
+                            fillet18:
+                                origin:
+                                    - 147.55396348960335
+                                    - -119.37383694606731
+                                radius: 0.5
+                                startAngle: 180.6942928570178
+                                endAngle: 270.13474834312365
+                                type: arc
+                            fillet19:
+                                origin:
+                                    - 146.44098821669982
+                                    - -110.05717785806883
+                                radius: 0.5
+                                startAngle: 0.6942928573598178
+                                endAngle: 89.6717392281476
+                                type: arc
+                            fillet20:
+                                origin:
+                                    - 91.58198232441418
+                                    - -108.74285634910233
+                                radius: 0.5
+                                startAngle: 180.00203974473578
+                                endAngle: 269.67173922814465
+                                type: arc
+                        origin:
+                            - 0
+                            - 0
+                origin:
+                    - 0
+                    - 0
+            b:
+                models:
+                    a:
+                        models:
+                            a:
+                                models:
+                                    a:
+                                        models:
+                                            a:
+                                                models:
+                                                    a:
+                                                        models: {}
+                                                        origin:
+                                                            - 0
+                                                            - 0
+                                                    b:
+                                                        paths:
+                                                            circle:
+                                                                type: circle
+                                                                origin:
+                                                                    - 109.5
+                                                                    - -71.5
+                                                                radius: 1.1
+                                                        origin:
+                                                            - 0
+                                                            - 0
+                                                origin:
+                                                    - 0
+                                                    - 0
+                                            b:
+                                                paths:
+                                                    circle:
+                                                        type: circle
+                                                        origin:
+                                                            - 109.5
+                                                            - -90.5
+                                                        radius: 1.1
+                                                origin:
+                                                    - 0
+                                                    - 0
+                                        origin:
+                                            - 0
+                                            - 0
+                                    b:
+                                        paths:
+                                            circle:
+                                                type: circle
+                                                origin:
+                                                    - 185.468
+                                                    - -61.65266670000001
+                                                radius: 1.1
+                                        origin:
+                                            - 0
+                                            - 0
+                                origin:
+                                    - 0
+                                    - 0
+                            b:
+                                paths:
+                                    circle:
+                                        type: circle
+                                        origin:
+                                            - 143.157
+                                            - -103.615
+                                        radius: 1.1
+                                origin:
+                                    - 0
+                                    - 0
+                        origin:
+                            - 0
+                            - 0
+                    b:
+                        paths:
+                            circle:
+                                type: circle
+                                origin:
+                                    - 214.3773038
+                                    - -112.64008039999999
+                                radius: 1.1
+                        origin:
+                            - 0
+                            - 0
+                origin:
+                    - 0
+                    - 0
+        origin:
+            - 0
+            - 0
+units: mm
+origin:
+    - 0
+    - 0

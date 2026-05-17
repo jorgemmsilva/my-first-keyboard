@@ -1,15 +1,12 @@
 {
   "name": "my-first-keyboard",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+  "scripts": {
+    "postinstall": "git submodule update --init --recursive --remote",
+    "build": "ergogen ./ergogen/ --output ./ --clear && npx @jscad/cli cases/my_first_keyboard_bottom_tray.jscad -of stla -o cases/my_first_keyboard_bottom_tray.stl",
+    "debug": "ergogen ./ergogen/ --output ./ --clear --debug && npx @jscad/cli cases/my_first_keyboard_bottom_tray.jscad -of stla -o cases/my_first_keyboard_bottom_tray.stl"
   },
   "dependencies": {
+    "@jscad/cli": "1.10.0",
     "ergogen": "^4.2.1"
   }
 }
