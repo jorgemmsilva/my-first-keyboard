@@ -8,8 +8,8 @@ meta:
         ky: u
         ks: 19
         kp: 19
-        kcow: 13.8
-        kcoh: 13.8
+        kcow: 14
+        kcoh: 14
         keycw: 18
         keych: 18
         led_pos_x: 0
@@ -60,8 +60,8 @@ presets:
         ky: u
         ks: 19
         kp: 19
-        kcow: 13.8
-        kcoh: 13.8
+        kcow: 14
+        kcoh: 14
         keycw: 18
         keych: 18
         led_pos_x: 0
@@ -77,8 +77,8 @@ units:
     ky: u
     ks: 19
     kp: 19
-    kcow: 13.8
-    kcoh: 13.8
+    kcow: 14
+    kcoh: 14
     keycw: 18
     keych: 18
     led_pos_x: 0

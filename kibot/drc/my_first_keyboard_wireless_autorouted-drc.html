@@ -1734,13 +1734,13 @@ AElFTkSuQmCC" alt="Logo" width="370" height="200">
  <td class="cell-info">
    <b>PCB</b>: my_first_keyboard_wireless_autorouted<br>
    <b>Revision</b>: 0.1<br>
-   <b>Date</b>: 2026-05-17T21:38:00+0000<br>
+   <b>Date</b>: 2026-05-21T21:19:37+0000<br>
    <b>KiCad Version</b>: 8.0.8<br>
  </td>
  <td class="cell-stats">
-   <b>Errors</b>: 1 (+12 excluded)<br>
-   <b>Warnings</b>: 6 (+78 excluded)<br>
-   <b>Total</b>: 7 (+90 excluded)<br>
+   <b>Errors</b>: 2 (+20 excluded)<br>
+   <b>Warnings</b>: 4 (+78 excluded)<br>
+   <b>Total</b>: 6 (+98 excluded)<br>
  </td>
 </tr>
 </table>
@@ -1760,496 +1760,519 @@ AElFTkSuQmCC" alt="Logo" width="370" height="200">
    <td>@(195.314 mm, 123.66 mm): Via [far_home_B] on F.Cu - B.Cu<br>@(194.914 mm, 124.352 mm): Via [C4] on F.Cu - B.Cu<br></td>
   </tr>
   <tr id="1">
-   <td class="td-warning">track_dangling</td>
-   <td>Track has unconnected end</td>
-   <td>@(210.6348 mm, 78.5067 mm): Track [C2] on F.Cu, length 4.4668 mm<br></td>
+   <td class="td-error">clearance</td>
+   <td>Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1993 mm)</td>
+   <td>@(194.914 mm, 124.352 mm): Via [C4] on F.Cu - B.Cu<br>@(195.314 mm, 123.66 mm): Via [far_home_B] on F.Cu - B.Cu<br></td>
   </tr>
   <tr id="2">
    <td class="td-warning">track_dangling</td>
    <td>Track has unconnected end</td>
-   <td>@(210.6348 mm, 78.5067 mm): Track [C2] on B.Cu, length 4.4668 mm<br></td>
+   <td>@(183.7189 mm, 45.9541 mm): Track [R0] on F.Cu, length 0.4476 mm<br></td>
   </tr>
   <tr id="3">
-   <td class="td-warning">via_dangling</td>
-   <td>Via is not connected or connected on only one layer</td>
-   <td>@(204.5889 mm, 69.7162 mm): Via [R0] on F.Cu - B.Cu<br></td>
-  </tr>
-  <tr id="4">
    <td class="td-warning">track_dangling</td>
    <td>Track has unconnected end</td>
-   <td>@(165.9979 mm, 105.6004 mm): Track [R3] on B.Cu, length 3.9749 mm<br></td>
+   <td>@(183.7189 mm, 45.9541 mm): Track [R0] on B.Cu, length 0.4476 mm<br></td>
   </tr>
-  <tr id="5">
+  <tr id="4">
    <td class="td-warning">silk_over_copper</td>
    <td>Silkscreen clipped by solder mask</td>
    <td>@(138.0 mm, 102.85 mm): PCB Text 'JLCJLCJLCJLC' on B.Silkscreen<br></td>
   </tr>
-  <tr id="6">
+  <tr id="5">
    <td class="td-warning">silk_over_copper</td>
    <td>Silkscreen clipped by solder mask</td>
    <td>@(138.0 mm, 102.85 mm): PCB Text 'JLCJLCJLCJLC' on F.Silkscreen<br></td>
   </tr>
+  <tr id="6">
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4021 mm)</td>
+   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.3309 mm, 85.2307 mm): Track [GND] on F.Cu, length 27.9582 mm<br></td>
+  </tr>
   <tr id="7">
    <td class="td-excluded">copper_edge_clearance</td>
-   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3080 mm)</td>
-   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.125 mm, 89.0167 mm): Pad [<no net>] of PWR1 on F.Cu<br></td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4021 mm)</td>
+   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(216.6006 mm, 92.961 mm): Track [GND] on F.Cu, length 10.9323 mm<br></td>
   </tr>
   <tr id="8">
    <td class="td-excluded">copper_edge_clearance</td>
-   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3080 mm)</td>
-   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.125 mm, 89.0167 mm): Pad [<no net>] of PWR1 on B.Cu<br></td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4021 mm)</td>
+   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.3309 mm, 57.2725 mm): Track [GND] on F.Cu, length 2.1551 mm<br></td>
   </tr>
   <tr id="9">
    <td class="td-excluded">copper_edge_clearance</td>
    <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3080 mm)</td>
-   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.125 mm, 96.3167 mm): Pad [<no net>] of PWR1 on F.Cu<br></td>
+   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.125 mm, 89.0167 mm): Pad [<no net>] of PWR1 on F.Cu<br></td>
   </tr>
   <tr id="10">
    <td class="td-excluded">copper_edge_clearance</td>
    <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3080 mm)</td>
-   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.125 mm, 96.3167 mm): Pad [<no net>] of PWR1 on B.Cu<br></td>
+   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.125 mm, 89.0167 mm): Pad [<no net>] of PWR1 on B.Cu<br></td>
   </tr>
   <tr id="11">
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3080 mm)</td>
+   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.125 mm, 96.3167 mm): Pad [<no net>] of PWR1 on F.Cu<br></td>
+  </tr>
+  <tr id="12">
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3080 mm)</td>
+   <td>@(224.833 mm, 47.156667 mm): Segment on Edge.Cuts<br>@(224.125 mm, 96.3167 mm): Pad [<no net>] of PWR1 on B.Cu<br></td>
+  </tr>
+  <tr id="13">
    <td class="td-excluded">copper_edge_clearance</td>
    <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3445 mm)</td>
    <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.225 mm, 65.75 mm): Pad 2 [outer_top_B] of S3 on B.Cu<br></td>
   </tr>
-  <tr id="12">
-   <td class="td-excluded">copper_edge_clearance</td>
-   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3431 mm)</td>
-   <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.225 mm, 103.75 mm): Pad 2 [outer_bottom_B] of S1 on B.Cu<br></td>
-  </tr>
-  <tr id="13">
-   <td class="td-excluded">copper_edge_clearance</td>
-   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4251 mm)</td>
-   <td>@(226.81122 mm, 134.233613 mm): Segment on Edge.Cuts<br>@(216.640758 mm, 141.964459 mm): Pad 2 [farest_home_B] of S22 on F.Cu<br></td>
-  </tr>
   <tr id="14">
-   <td class="td-excluded">copper_edge_clearance</td>
-   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4144 mm)</td>
-   <td>@(147.054 mm, 119.379896 mm): Segment on Edge.Cuts<br>@(148.725 mm, 114.5 mm): Pad 2 [near_home_B] of S19 on B.Cu<br></td>
-  </tr>
-  <tr id="15">
    <td class="td-excluded">copper_edge_clearance</td>
    <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3438 mm)</td>
    <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.225 mm, 84.75 mm): Pad 2 [outer_home_B] of S2 on B.Cu<br></td>
   </tr>
+  <tr id="15">
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4251 mm)</td>
+   <td>@(226.81122 mm, 134.233613 mm): Segment on Edge.Cuts<br>@(216.640758 mm, 141.964459 mm): Pad 2 [farest_home_B] of S22 on F.Cu<br></td>
+  </tr>
   <tr id="16">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(222.194 mm, 102.6617 mm): Footprint MH2<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3431 mm)</td>
+   <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.225 mm, 103.75 mm): Pad 2 [outer_bottom_B] of S1 on B.Cu<br></td>
   </tr>
   <tr id="17">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(214.3773 mm, 112.6401 mm): Footprint MH7<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4698 mm)</td>
+   <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.15 mm, 58.85 mm): Pad 1 [R0] of D3 on B.Cu<br></td>
   </tr>
   <tr id="18">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(164.75 mm, 109.25 mm): Footprint D41<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4697 mm)</td>
+   <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.15 mm, 62.15 mm): Pad 2 [outer_top_B] of D3 on B.Cu<br></td>
   </tr>
   <tr id="19">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(202.75 mm, 89.7917 mm): Footprint D38<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4684 mm)</td>
+   <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.15 mm, 96.85 mm): Pad 1 [R2] of D1 on B.Cu<br></td>
   </tr>
   <tr id="20">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(107.75 mm, 60.5 mm): Footprint D25<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4683 mm)</td>
+   <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.15 mm, 100.15 mm): Pad 2 [outer_bottom_B] of D1 on B.Cu<br></td>
   </tr>
   <tr id="21">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(126.75 mm, 98.5 mm): Footprint D26<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4700 mm)</td>
+   <td>@(129.08 mm, 52.499868 mm): Segment on Edge.Cuts<br>@(130.15 mm, 49.35 mm): Pad 1 [R0] of D9 on B.Cu<br></td>
   </tr>
   <tr id="22">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(109.5 mm, 71.5 mm): Footprint MH3<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4700 mm)</td>
+   <td>@(129.08 mm, 52.499868 mm): Segment on Edge.Cuts<br>@(130.15 mm, 52.65 mm): Pad 2 [ring_top_B] of D9 on B.Cu<br></td>
   </tr>
   <tr id="23">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(145.75 mm, 89.0 mm): Footprint D29<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4691 mm)</td>
+   <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.15 mm, 77.85 mm): Pad 1 [R1] of D2 on B.Cu<br></td>
   </tr>
   <tr id="24">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(183.75 mm, 87.4167 mm): Footprint D35<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4690 mm)</td>
+   <td>@(91.081982 mm, 108.742874 mm): Segment on Edge.Cuts<br>@(92.15 mm, 81.15 mm): Pad 2 [outer_home_B] of D2 on B.Cu<br></td>
   </tr>
   <tr id="25">
-   <td class="td-excluded">lib_footprint_issues</td>
-   <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(126.75 mm, 60.5 mm): Footprint D28<br></td>
+   <td class="td-excluded">copper_edge_clearance</td>
+   <td>Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4144 mm)</td>
+   <td>@(147.054 mm, 119.379896 mm): Segment on Edge.Cuts<br>@(148.725 mm, 114.5 mm): Pad 2 [near_home_B] of S19 on B.Cu<br></td>
   </tr>
   <tr id="26">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(164.75 mm, 84.25 mm): Footprint D32<br></td>
+   <td>@(183.85 mm, 68.4167 mm): Footprint D36<br></td>
   </tr>
   <tr id="27">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(214.704 mm, 48.8317 mm): Footprint RST1<br></td>
+   <td>@(143.157 mm, 103.615 mm): Footprint MH6<br></td>
   </tr>
   <tr id="28">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(214.647 mm, 66.9167 mm): Footprint DISP1<br></td>
+   <td>@(204.3993 mm, 123.6224 mm): Footprint D43<br></td>
   </tr>
   <tr id="29">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(107.75 mm, 79.5 mm): Footprint D24<br></td>
+   <td>@(202.85 mm, 89.7917 mm): Footprint D38<br></td>
   </tr>
   <tr id="30">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(207.762 mm, 94.1427 mm): Footprint MH1<br></td>
+   <td>@(164.85 mm, 46.25 mm): Footprint D34<br></td>
   </tr>
   <tr id="31">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(185.4742 mm, 113.807 mm): Footprint D42<br></td>
+   <td>@(202.85 mm, 70.7917 mm): Footprint D39<br></td>
   </tr>
   <tr id="32">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(185.468 mm, 61.6527 mm): Footprint MH5<br></td>
+   <td>@(164.85 mm, 84.25 mm): Footprint D32<br></td>
   </tr>
   <tr id="33">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(211.75 mm, 91.4167 mm): Footprint JST1<br></td>
+   <td>@(126.85 mm, 60.5 mm): Footprint D28<br></td>
   </tr>
   <tr id="34">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(107.75 mm, 98.5 mm): Footprint D23<br></td>
+   <td>@(109.5 mm, 90.5 mm): Footprint MH4<br></td>
   </tr>
   <tr id="35">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(109.5 mm, 90.5 mm): Footprint MH4<br></td>
+   <td>@(214.3773 mm, 112.6401 mm): Footprint MH7<br></td>
   </tr>
   <tr id="36">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(204.3127 mm, 123.5724 mm): Footprint D43<br></td>
+   <td>@(183.85 mm, 87.4167 mm): Footprint D35<br></td>
   </tr>
   <tr id="37">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(223.0 mm, 92.6667 mm): Footprint PWR1<br></td>
+   <td>@(185.468 mm, 61.6527 mm): Footprint MH5<br></td>
   </tr>
   <tr id="38">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(183.75 mm, 49.4167 mm): Footprint D37<br></td>
+   <td>@(107.85 mm, 60.5 mm): Footprint D25<br></td>
   </tr>
   <tr id="39">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(202.75 mm, 51.7917 mm): Footprint D40<br></td>
+   <td>@(145.85 mm, 70.0 mm): Footprint D30<br></td>
   </tr>
   <tr id="40">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(219.9819 mm, 137.881 mm): Footprint D44<br></td>
+   <td>@(109.5 mm, 71.5 mm): Footprint MH3<br></td>
   </tr>
   <tr id="41">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(145.75 mm, 51.0 mm): Footprint D31<br></td>
+   <td>@(185.5707 mm, 113.8328 mm): Footprint D42<br></td>
   </tr>
   <tr id="42">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(164.75 mm, 46.25 mm): Footprint D34<br></td>
+   <td>@(164.85 mm, 109.25 mm): Footprint D41<br></td>
   </tr>
   <tr id="43">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(183.75 mm, 68.4167 mm): Footprint D36<br></td>
+   <td>@(183.85 mm, 49.4167 mm): Footprint D37<br></td>
   </tr>
   <tr id="44">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(145.75 mm, 70.0 mm): Footprint D30<br></td>
+   <td>@(222.194 mm, 102.6617 mm): Footprint MH2<br></td>
   </tr>
   <tr id="45">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(143.157 mm, 103.615 mm): Footprint MH6<br></td>
+   <td>@(214.704 mm, 48.8317 mm): Footprint RST1<br></td>
   </tr>
   <tr id="46">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(202.75 mm, 70.7917 mm): Footprint D39<br></td>
+   <td>@(145.85 mm, 51.0 mm): Footprint D31<br></td>
   </tr>
   <tr id="47">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(126.75 mm, 79.5 mm): Footprint D27<br></td>
+   <td>@(223.0 mm, 92.6667 mm): Footprint PWR1<br></td>
   </tr>
   <tr id="48">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(164.75 mm, 65.25 mm): Footprint D33<br></td>
+   <td>@(220.0526 mm, 137.9517 mm): Footprint D44<br></td>
   </tr>
   <tr id="49">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(214.704 mm, 64.5367 mm): Footprint MCU1<br></td>
+   <td>@(202.85 mm, 51.7917 mm): Footprint D40<br></td>
   </tr>
   <tr id="50">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(187.25 mm, 89.7917 mm): Footprint D16<br></td>
+   <td>@(214.647 mm, 66.9167 mm): Footprint DISP1<br></td>
   </tr>
   <tr id="51">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(177.6 mm, 113.25 mm): Footprint S20<br></td>
+   <td>@(107.85 mm, 98.5 mm): Footprint D23<br></td>
   </tr>
   <tr id="52">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(187.25 mm, 70.7917 mm): Footprint D17<br></td>
+   <td>@(211.75 mm, 91.4167 mm): Footprint JST1<br></td>
   </tr>
   <tr id="53">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(111.25 mm, 98.5 mm): Footprint D4<br></td>
+   <td>@(145.85 mm, 89.0 mm): Footprint D29<br></td>
   </tr>
   <tr id="54">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(138.0 mm, 71.5 mm): Footprint S8<br></td>
+   <td>@(126.85 mm, 79.5 mm): Footprint D27<br></td>
   </tr>
   <tr id="55">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(119.0 mm, 81.0 mm): Footprint S5<br></td>
+   <td>@(164.85 mm, 65.25 mm): Footprint D33<br></td>
   </tr>
   <tr id="56">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(92.25 mm, 98.5 mm): Footprint D1<br></td>
+   <td>@(107.85 mm, 79.5 mm): Footprint D24<br></td>
   </tr>
   <tr id="57">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(190.8893 mm, 115.8224 mm): Footprint D21<br></td>
+   <td>@(207.762 mm, 94.1427 mm): Footprint MH1<br></td>
   </tr>
   <tr id="58">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(111.25 mm, 60.5 mm): Footprint D6<br></td>
+   <td>@(126.85 mm, 98.5 mm): Footprint D26<br></td>
   </tr>
   <tr id="59">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(100.0 mm, 62.0 mm): Footprint S3<br></td>
+   <td>@(214.704 mm, 64.5367 mm): Footprint MCU1<br></td>
   </tr>
   <tr id="60">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(130.25 mm, 70.0 mm): Footprint D8<br></td>
+   <td>@(130.15 mm, 70.0 mm): Footprint D8<br></td>
   </tr>
   <tr id="61">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(157.0 mm, 47.75 mm): Footprint S12<br></td>
+   <td>@(100.0 mm, 62.0 mm): Footprint S3<br></td>
   </tr>
   <tr id="62">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(170.5023 mm, 109.7953 mm): Footprint D20<br></td>
+   <td>@(170.4057 mm, 109.7694 mm): Footprint D20<br></td>
   </tr>
   <tr id="63">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(149.25 mm, 109.25 mm): Footprint D19<br></td>
+   <td>@(130.15 mm, 89.0 mm): Footprint D7<br></td>
   </tr>
   <tr id="64">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(138.0 mm, 90.5 mm): Footprint S7<br></td>
+   <td>@(195.0 mm, 72.2917 mm): Footprint S17<br></td>
   </tr>
   <tr id="65">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(100.0 mm, 100.0 mm): Footprint S1<br></td>
+   <td>@(149.15 mm, 65.25 mm): Footprint D11<br></td>
   </tr>
   <tr id="66">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(119.0 mm, 62.0 mm): Footprint S6<br></td>
+   <td>@(100.0 mm, 81.0 mm): Footprint S2<br></td>
   </tr>
   <tr id="67">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(149.25 mm, 84.25 mm): Footprint D10<br></td>
+   <td>@(213.4411 mm, 133.4615 mm): Footprint S22<br></td>
   </tr>
   <tr id="68">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(176.0 mm, 88.9167 mm): Footprint S13<br></td>
+   <td>@(100.0 mm, 100.0 mm): Footprint S1<br></td>
   </tr>
   <tr id="69">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(195.0 mm, 72.2917 mm): Footprint S17<br></td>
+   <td>@(176.0 mm, 50.9167 mm): Footprint S15<br></td>
   </tr>
   <tr id="70">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(119.0 mm, 100.0 mm): Footprint S4<br></td>
+   <td>@(149.15 mm, 46.25 mm): Footprint D12<br></td>
   </tr>
   <tr id="71">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(149.25 mm, 46.25 mm): Footprint D12<br></td>
+   <td>@(119.0 mm, 100.0 mm): Footprint S4<br></td>
   </tr>
   <tr id="72">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(111.25 mm, 79.5 mm): Footprint D5<br></td>
+   <td>@(187.15 mm, 70.7917 mm): Footprint D17<br></td>
   </tr>
   <tr id="73">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(157.0 mm, 66.75 mm): Footprint S11<br></td>
+   <td>@(92.15 mm, 60.5 mm): Footprint D3<br></td>
   </tr>
   <tr id="74">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(176.0 mm, 50.9167 mm): Footprint S15<br></td>
+   <td>@(177.6 mm, 113.25 mm): Footprint S20<br></td>
   </tr>
   <tr id="75">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(168.25 mm, 87.4167 mm): Footprint D13<br></td>
+   <td>@(187.15 mm, 51.7917 mm): Footprint D18<br></td>
   </tr>
   <tr id="76">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(149.25 mm, 65.25 mm): Footprint D11<br></td>
+   <td>@(196.851 mm, 120.9965 mm): Footprint S21<br></td>
   </tr>
   <tr id="77">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(176.0 mm, 69.9167 mm): Footprint S14<br></td>
+   <td>@(208.951 mm, 126.8501 mm): Footprint D22<br></td>
   </tr>
   <tr id="78">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(168.25 mm, 49.4167 mm): Footprint D15<br></td>
+   <td>@(138.0 mm, 90.5 mm): Footprint S7<br></td>
   </tr>
   <tr id="79">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(168.25 mm, 68.4167 mm): Footprint D14<br></td>
+   <td>@(138.0 mm, 71.5 mm): Footprint S8<br></td>
   </tr>
   <tr id="80">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(195.0 mm, 53.2917 mm): Footprint S18<br></td>
+   <td>@(176.0 mm, 69.9167 mm): Footprint S14<br></td>
   </tr>
   <tr id="81">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(213.4411 mm, 133.4615 mm): Footprint S22<br></td>
+   <td>@(111.15 mm, 60.5 mm): Footprint D6<br></td>
   </tr>
   <tr id="82">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(92.25 mm, 79.5 mm): Footprint D2<br></td>
+   <td>@(195.0 mm, 53.2917 mm): Footprint S18<br></td>
   </tr>
   <tr id="83">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(130.25 mm, 51.0 mm): Footprint D9<br></td>
+   <td>@(157.0 mm, 47.75 mm): Footprint S12<br></td>
   </tr>
   <tr id="84">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(157.0 mm, 85.75 mm): Footprint S10<br></td>
+   <td>@(119.0 mm, 62.0 mm): Footprint S6<br></td>
   </tr>
   <tr id="85">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(157.0 mm, 110.75 mm): Footprint S19<br></td>
+   <td>@(195.0 mm, 91.2917 mm): Footprint S16<br></td>
   </tr>
   <tr id="86">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(187.25 mm, 51.7917 mm): Footprint D18<br></td>
+   <td>@(190.8027 mm, 115.7724 mm): Footprint D21<br></td>
   </tr>
   <tr id="87">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(138.0 mm, 52.5 mm): Footprint S9<br></td>
+   <td>@(168.15 mm, 68.4167 mm): Footprint D14<br></td>
   </tr>
   <tr id="88">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(209.0217 mm, 126.9208 mm): Footprint D22<br></td>
+   <td>@(111.15 mm, 79.5 mm): Footprint D5<br></td>
   </tr>
   <tr id="89">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(130.25 mm, 89.0 mm): Footprint D7<br></td>
+   <td>@(149.15 mm, 109.25 mm): Footprint D19<br></td>
   </tr>
   <tr id="90">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(195.0 mm, 91.2917 mm): Footprint S16<br></td>
+   <td>@(176.0 mm, 88.9167 mm): Footprint S13<br></td>
   </tr>
   <tr id="91">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(92.25 mm, 60.5 mm): Footprint D3<br></td>
+   <td>@(92.15 mm, 98.5 mm): Footprint D1<br></td>
   </tr>
   <tr id="92">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(196.851 mm, 120.9965 mm): Footprint S21<br></td>
+   <td>@(149.15 mm, 84.25 mm): Footprint D10<br></td>
   </tr>
   <tr id="93">
    <td class="td-excluded">lib_footprint_issues</td>
    <td>The current configuration does not include the library 'ceoloide'.</td>
-   <td>@(100.0 mm, 81.0 mm): Footprint S2<br></td>
+   <td>@(157.0 mm, 85.75 mm): Footprint S10<br></td>
   </tr>
- </tbody>
-</table>
-<p class="subtitle">Unconnected items</p>
-<table class="content-table">
- <thead>
-  <tr>
-   <th>Type</th>
-   <th>Description</th>
-   <th>Details</th>
-  </tr>
- </thead>
- <tbody>
   <tr id="94">
-   <td class="td-excluded">unconnected_items</td>
-   <td>Missing connection between items</td>
-   <td>@(209.929 mm, 72.1567 mm): Track [R1] on B.Cu, length 0.1950 mm<br>@(202.75 mm, 69.1417 mm): Pad 1 [R1] of D39 on F.Cu<br></td>
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(119.0 mm, 81.0 mm): Footprint S5<br></td>
   </tr>
   <tr id="95">
-   <td class="td-excluded">unconnected_items</td>
-   <td>Missing connection between items</td>
-   <td>@(202.75 mm, 69.1417 mm): Pad 1 [R1] of D39 on F.Cu<br>@(187.25 mm, 69.1417 mm): Track [R1] on B.Cu, length 0.2975 mm<br></td>
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(130.15 mm, 51.0 mm): Footprint D9<br></td>
   </tr>
   <tr id="96">
-   <td class="td-excluded">unconnected_items</td>
-   <td>Missing connection between items</td>
-   <td>@(204.8808 mm, 69.4243 mm): Track [R0] on F.Cu, length 16.4001 mm<br>@(209.929 mm, 69.6167 mm): Track [R0] on B.Cu, length 0.0975 mm<br></td>
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(157.0 mm, 66.75 mm): Footprint S11<br></td>
+  </tr>
+  <tr id="97">
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(92.15 mm, 79.5 mm): Footprint D2<br></td>
+  </tr>
+  <tr id="98">
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(168.15 mm, 49.4167 mm): Footprint D15<br></td>
+  </tr>
+  <tr id="99">
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(187.15 mm, 89.7917 mm): Footprint D16<br></td>
+  </tr>
+  <tr id="100">
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(138.0 mm, 52.5 mm): Footprint S9<br></td>
+  </tr>
+  <tr id="101">
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(111.15 mm, 98.5 mm): Footprint D4<br></td>
+  </tr>
+  <tr id="102">
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(157.0 mm, 110.75 mm): Footprint S19<br></td>
+  </tr>
+  <tr id="103">
+   <td class="td-excluded">lib_footprint_issues</td>
+   <td>The current configuration does not include the library 'ceoloide'.</td>
+   <td>@(168.15 mm, 87.4167 mm): Footprint D13<br></td>
   </tr>
  </tbody>
 </table>

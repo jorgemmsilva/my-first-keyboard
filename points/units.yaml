@@ -13,8 +13,8 @@ kx: 19
 ky: 19
 ks: 19
 kp: 19
-kcow: 13.8
-kcoh: 13.8
+kcow: 14
+kcoh: 14
 keycw: 18
 keych: 18
 led_pos_x: 0
@@ -22,7 +22,7 @@ led_pos_y: 4.7
 led_rotation: 0
 vertical_underglow_shift: -11.2
 vertical_diode_shift: 1.5
-horizontal_diode_shift: -7.75
+horizontal_diode_shift: -7.85
 diode_rotation: -180
 switch_rotation: 180
 hand_rotation: 0

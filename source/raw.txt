@@ -56,6 +56,8 @@ presets:
     ky: u # spacing between key centers (Y-axis)
     ks: 19 # horizontal space between columns (default: 19)
     kp: 19 # vertical padding between keys (deafult: 19)
+    kcow: 14 # key cutout hole width (cherry, choc v2: 14, choc v1: 13.8)
+    kcoh: 14 # key cutout hole height (cherry, choc v2: 14, choc v1: 13.8)
     keycw: 18 # keycap width (cherry: 18, choc: 17.5)
     keych: 18 # keycap height (cherry: 18, choc: 16.5)
 
