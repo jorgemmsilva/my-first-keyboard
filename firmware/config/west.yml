@@ -1,0 +1,38 @@
+manifest:
+  defaults:
+    revision: v0.3
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: M165437 #nice-view-gem
+      url-base: https://github.com/M165437 
+    - name: gpeye #hammerbeam-slideshow
+      url-base: https://github.com/GPeye
+    # - name: englmaxi
+    #   url-base: https://github.com/englmaxi
+    # - name: mctechnology17
+    #   url-base: https://github.com/mctechnology17
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      path: zmk
+      import: app/west.yml
+    - name: nice-view-gem
+      remote: M165437
+      revision: main
+      path: deps/nice-view-gem
+    - name: hammerbeam-slideshow
+      remote: gpeye
+      revision: main
+      path: deps/hammerbeam-slideshow
+    # - name: zmk-dongle-display
+    #   remote: englmaxi
+    #   revision: main
+    #   path: deps/zmk-dongle-display
+    # - name: zmk-switch-layout
+    #   remote: mctechnology17
+    #   revision: main
+    #   path: deps/zmk-switch-layout
+  self:
+    path: config

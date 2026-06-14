@@ -1,0 +1,16 @@
+include:
+  - board: nice_nano@2.0.0//zmk
+    # shield: my_keyboard_left nice_view_adapter nice_view_gem
+    shield: my_keyboard_left nice_view
+    snippet: studio-rpc-usb-uart # enables RPC over usb for zmk studio
+    artifact-name: my_keyboard_left
+
+  - board: nice_nano@2.0.0//zmk
+    # shield: my_keyboard_right nice_view_adapter nice_view_gem
+    shield: my_keyboard_right nice_view 
+    artifact-name: my_keyboard_right
+
+  - board: nice_nano@2.0.0//zmk
+    shield: settings_reset
+    artifact-name: my_keyboard_settings_reset
+

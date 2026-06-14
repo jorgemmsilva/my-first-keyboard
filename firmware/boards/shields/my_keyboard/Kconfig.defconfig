@@ -1,0 +1,35 @@
+if SHIELD_MY_KEYBOARD_LEFT
+
+config ZMK_KEYBOARD_NAME
+  default "My Keyboard"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+  default y
+
+# number of peripherals (1 for the right half)
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+  default 1
+
+# config BT_MAX_CONN
+#   default 6
+#
+# config BT_MAX_PAIRED
+#   default 6
+#
+config ZMK_STUDIO
+  default y
+
+endif
+
+if SHIELD_MY_KEYBOARD_LEFT || SHIELD_MY_KEYBOARD_RIGHT
+
+config ZMK_SPLIT
+  default y
+
+config ZMK_DISPLAY
+  default y
+
+config SPI
+    default y
+
+endif
