@@ -1,32 +1,62 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+// mouse cfg override (must come before pointing.h import)
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+#include <dt-bindings/zmk/pointing.h>
+
+
+
+#define HYPER LS(LC(LA(LGUI)))
+
 / {
+    behaviors {
+
+    };
+
     keymap {
         compatible = "zmk,keymap";
+
 
         default_layer {
             display-name = "Base";
             bindings = <
-                &studio_unlock &kp B &kp C &kp D &kp E &kp F    &kp G &kp H &kp I &kp J &kp K &kp L
-                &kp M &kp N &kp O &kp P &kp Q &kp R    &kp S &kp T &kp U &kp V &kp W &kp X
-                &kp Y &kp Z &kp A &kp B &kp C &kp D    &kp E &kp F &kp G &kp H &kp I &kp J
-                            &kp K &kp L &kp M &kp N    &kp O &kp P &kp Q &kp R
+                &kp TAB        &kp Q &kp W    &kp E    &kp R       &kp T      /*|*/      &kp Y   &kp U       &kp I      &kp O         &kp P          &kp BKSP
+                &mt HYPER ESC  &kp A &kp S    &kp D    &kp F       &kp G      /*|*/      &kp H   &kp J       &kp K      &kp L         &kp APOSTROPHE &kp ENTER
+                &mt LCTRL LPAR &kp Z &kp X    &kp C    &kp V       &kp B      /*|*/      &kp N   &kp M       &kp SEMI   &kp BACKSLASH &kp SLASH      &mt LSHIFT RPAR
+                                     &kp LALT &kp LCMD &lt 1 SPACE &lt 3 F2   /*|*/      &kp DEL &lt 1 COMMA &lt 2 DOT  &kp GRAVE
             >;
         };
 
         layer_1 {
-            status = "reserved";
+            bindings = <
+                &trans &trans           &kp N7 &kp N8  &kp N9 &trans            /*|*/  &trans    &kp N7 &kp N8  &kp N9 &kp EQUAL    &trans
+                &trans &kp LEFT_BRACE   &kp N4 &kp N5  &kp N6 &kp RIGHT_BRACE   /*|*/  &kp PLUS  &kp N4 &kp N5  &kp N6 &kp ASTERISK &trans
+                &trans &kp LEFT_BRACKET &kp N1 &kp N2  &kp N3 &kp RIGHT_BRACKET /*|*/  &kp MINUS &kp N1 &kp N2  &kp N3 &kp SLASH    &trans
+                                        &kp N0 &kp DOT &trans &trans            /*|*/  &trans    &trans &kp DOT &kp N0
+            >;
         };
-        
+
         layer_2 {
-            status = "reserved";
+            bindings = <
+                &trans &trans  &kp F7 &kp F8 &kp F9  &kp F12  /*|*/  &trans   &kp END   &kp HOME  &trans    &trans &trans
+                &trans &trans  &kp F4 &kp F5 &kp F6  &kp F11  /*|*/  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans
+                &trans &trans  &kp F1 &kp F2 &kp F3  &kp F10  /*|*/  &trans   &kp PG_DN &kp PG_UP &trans    &trans &trans
+                               &trans &trans &trans  &trans   /*|*/  &trans   &trans    &trans    &trans
+            >;
+
         };
 
         layer_3 {
-            status = "reserved";
+            bindings = <
+                &studio_unlock &kp EXCLAMATION &kp AT_SIGN      &kp CARET         &kp DOLLAR    &trans      /*|*/   &trans         &trans       &trans         &trans          &trans &trans
+                &trans         &trans          &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp PIPE      &kp LS(F4)  /*|*/   &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans
+                &trans         &trans          &kp LESS_THAN    &kp GREATER_THAN  &kp AMPERSAND &kp F4      /*|*/   &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT &trans &trans
+                                               &trans           &mkp MB4          &mkp MB5      &trans      /*|*/   &trans         &mkp MCLK    &mkp LCLK      &mkp RCLK
+            >;
         };
-        
+
         layer_4 {
             status = "reserved";
         };
@@ -52,12 +82,13 @@
         };
         
         layer_10 {
-            bindings = <
-                &studio_unlock &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                            &trans &trans &trans &trans    &trans &trans &trans &trans
-            >;
+            status = "reserved";
+            /* bindings = < */
+            /*     &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans */
+            /*     &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans */
+            /*     &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans */
+            /*                   &trans &trans &trans &trans    &trans &trans &trans &trans */
+            /* >; */
         };
     };
 };
