@@ -3,6 +3,7 @@ set -u
 
 VOL="/Volumes/NICENANO/"
 UF2="./artifacts/my_keyboard_right.uf2"
+# UF2="./artifacts/my_keyboard_right_logging.uf2"
 
 TIMEOUT=1800   # seconds
 INTERVAL=0.2 # seconds

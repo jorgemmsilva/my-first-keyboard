@@ -8,10 +8,55 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp A &kp B &kp C &kp D &kp E &kp F    &kp G &kp H &kp I &kp J &kp K &kp L
+                &studio_unlock &kp B &kp C &kp D &kp E &kp F    &kp G &kp H &kp I &kp J &kp K &kp L
                 &kp M &kp N &kp O &kp P &kp Q &kp R    &kp S &kp T &kp U &kp V &kp W &kp X
                 &kp Y &kp Z &kp A &kp B &kp C &kp D    &kp E &kp F &kp G &kp H &kp I &kp J
                             &kp K &kp L &kp M &kp N    &kp O &kp P &kp Q &kp R
+            >;
+        };
+
+        layer_1 {
+            status = "reserved";
+        };
+        
+        layer_2 {
+            status = "reserved";
+        };
+
+        layer_3 {
+            status = "reserved";
+        };
+        
+        layer_4 {
+            status = "reserved";
+        };
+
+        layer_5 {
+            status = "reserved";
+        };
+        
+        layer_6 {
+            status = "reserved";
+        };
+
+        layer_7 {
+            status = "reserved";
+        };
+        
+        layer_8 {
+            status = "reserved";
+        };
+
+        layer_9 {
+            status = "reserved";
+        };
+        
+        layer_10 {
+            bindings = <
+                &studio_unlock &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+                            &trans &trans &trans &trans    &trans &trans &trans &trans
             >;
         };
     };

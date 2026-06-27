@@ -592,7 +592,7 @@ Commands:
 
 Environment Variables:
   KEYBOARD        Name of the keyboard being built (default: extracted from directory name)
-  RUNTIME         Container runtime (default: docker, can be podman)
+  RUNTIME         Container runtime (default: podman, can be docker)
   ZMK_IMAGE       ZMK build image (default: docker.io/zmkfirmware/zmk-build-arm:4.1-branch)
   BUILD_CONFIG    Build configuration file (default: build.yaml)
   INCREMENTAL     Skip pristine builds for faster rebuilds (default: false)
@@ -684,7 +684,10 @@ build)
         # shellcheck disable=SC2053
         if [[ "$artifact_name" == $pattern ]]; then
           matched=$((matched + 1))
-          build_target "$artifact_name" || failed=$((failed + 1))
+          if ! build_target "$artifact_name"; then
+            failed=$((failed + 1))
+            break
+          fi
         fi
       done < <(parse_build_config)
       build_end_time=$(date +%s)
