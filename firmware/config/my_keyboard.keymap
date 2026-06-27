@@ -15,6 +15,24 @@
 
     };
 
+    combos {
+        compatible = "zmk,combos";
+        // ESC on f+d 
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            /* layers = <0>; */
+            bindings = <&kp ESC>;
+        };
+        // ENTER on j+k
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            /* layers = <0>; */
+            bindings = <&kp ENTER>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
