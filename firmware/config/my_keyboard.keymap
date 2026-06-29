@@ -20,20 +20,108 @@
 
     combos {
         compatible = "zmk,combos";
-        // ESC on f+d 
+
+        // ESC on fd 
         combo_esc {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            /* layers = <0>; */
+            layers = <0>;
             bindings = <&kp ESC>;
         };
-        // ENTER on j+k
+
+        // ENTER on jk
         combo_enter {
             timeout-ms = <50>;
             key-positions = <19 20>;
-            /* layers = <0>; */
+            layers = <0>;
             bindings = <&kp ENTER>;
         };
+
+        // BKSP on yu
+        combo_bksp {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            layers = <0>;
+            bindings = <&kp DEL>;
+        };
+        
+        // DEL on rt
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            layers = <0>;
+            bindings = <&kp BKSP>;
+        };
+
+        // - on ui
+        combo_minus {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            layers = <0>;
+            bindings = <&kp MINUS>;
+        };
+
+        // + on io
+        combo_plus {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            layers = <0>;
+            bindings = <&kp PLUS>;
+        };
+
+        // = on l'
+        combo_eq {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            layers = <0>;
+            bindings = <&kp EQUAL>;
+        };
+
+
+        // &| on sd / xc
+        combo_amp {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            layers = <0>;
+            bindings = <&kp AMPERSAND>;
+        };
+        combo_pipe {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            layers = <0>;
+            bindings = <&kp PIPE>;
+        };
+
+
+        // {} on fg / hj
+        combo_lbrace {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            layers = <0>;
+            bindings = <&kp LEFT_BRACE>;
+        };
+        combo_rbrace {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            layers = <0>;
+            bindings = <&kp RIGHT_BRACE>;
+        };
+
+
+        // [] on vb / nm
+        combo_lbracket {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            layers = <0>;
+            bindings = <&kp LEFT_BRACKET>;
+        };
+        combo_rbracket {
+            timeout-ms = <50>;
+            key-positions = <30 31>;
+            layers = <0>;
+            bindings = <&kp RIGHT_BRACKET>;
+        };
+
     };
 
     keymap {
@@ -43,14 +131,14 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp TAB        &kp Q &kp W    &kp E    &kp R       &kp T      /*|*/      &kp Y   &kp U       &kp I      &kp O         &kp P          &kp BKSP
-                &mt HYPER ESC  &kp A &kp S    &kp D    &kp F       &kp G      /*|*/      &kp H   &kp J       &kp K      &kp L         &kp APOSTROPHE &kp ENTER
-                &mt LCTRL LPAR &kp Z &kp X    &kp C    &kp V       &kp B      /*|*/      &kp N   &kp M       &kp SEMI   &kp BACKSLASH &kp SLASH      &mt LSHIFT RPAR
-                                     &kp LALT &kp LCMD &lt 1 SPACE &lt 3 F2   /*|*/      &kp DEL &lt 1 COMMA &lt 2 DOT  &kp GRAVE
+                &kp TAB         &kp Q   &kp W     &kp E    &kp R       &kp T         /*|*/      &kp Y   &kp U       &kp I      &kp O         &kp P          &kp BKSP
+                &mt HYPER ESC   &kp A   &kp S     &kp D    &kp F       &kp G         /*|*/      &kp H   &kp J       &kp K      &kp L         &kp APOSTROPHE &kp ENTER
+                &mt LSHIFT LPAR &lt 1 Z &kp X     &kp C    &kp V       &kp B         /*|*/      &kp N   &kp M       &kp SEMI   &kp BACKSLASH &kp SLASH      &mt RSHIFT RPAR
+                                        &kp LCTRL &kp LCMD &lt 3 SPACE &kp LALT      /*|*/      &kp F12 &lt 1 COMMA &lt 2 DOT  &kp GRAVE
             >;
         };
 
-        layer_1 {
+        numbers_1 {
             bindings = <
                 &trans &trans           &kp N7 &kp N8  &kp N9 &trans            /*|*/  &trans    &kp N7 &kp N8  &kp N9 &kp EQUAL    &trans
                 &trans &kp LEFT_BRACE   &kp N4 &kp N5  &kp N6 &kp RIGHT_BRACE   /*|*/  &kp PLUS  &kp N4 &kp N5  &kp N6 &kp ASTERISK &trans
@@ -59,27 +147,32 @@
             >;
         };
 
-        layer_2 {
+        nav_2 {
             bindings = <
-                &trans &trans  &kp F7 &kp F8 &kp F9  &kp F12  /*|*/  &trans   &kp END   &kp HOME  &trans    &trans &trans
-                &trans &trans  &kp F4 &kp F5 &kp F6  &kp F11  /*|*/  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans
-                &trans &trans  &kp F1 &kp F2 &kp F3  &kp F10  /*|*/  &trans   &kp PG_DN &kp PG_UP &trans    &trans &trans
-                               &trans &trans &trans  &trans   /*|*/  &trans   &trans    &trans    &trans
+                &trans &trans  &kp F7 &kp F8 &kp F9  &kp F12  /*|*/  &trans        &kp END       &kp HOME  &trans           &trans       &trans
+                &trans &trans  &kp F4 &kp F5 &kp F6  &kp F11  /*|*/  &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT        &kp C_VOL_UP &kp C_BRI_INC
+                &trans &trans  &kp F1 &kp F2 &kp F3  &kp F10  /*|*/  &trans        &kp PG_DN     &kp PG_UP &trans           &kp C_VOL_DN &kp C_BRI_DEC
+                               &trans &trans &trans  &trans   /*|*/  &kp LC(PG_UP) &kp LC(PG_DN) &trans    &kp C_PLAY_PAUSE
             >;
 
         };
 
-        layer_3 {
+        mouse_3 {
             bindings = <
-                &studio_unlock &kp EXCLAMATION &kp AT_SIGN      &kp CARET         &kp DOLLAR    &trans      /*|*/   &trans         &trans       &trans         &trans          &trans &trans
-                &bt BT_CLR     &trans          &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp PIPE      &kp LS(F4)  /*|*/   &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans
-                &bt BT_PRV     &bt BT_NXT      &kp LESS_THAN    &kp GREATER_THAN  &kp AMPERSAND &kp F4      /*|*/   &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT &trans &trans
-                                               &trans           &mkp MB4          &mkp MB5      &trans      /*|*/   &trans         &mkp MCLK    &mkp LCLK      &mkp RCLK
+                &mo 4      &kp EXCLAMATION &kp AT_SIGN &kp CARET &kp DOLLAR &trans    /*|*/   &trans         &trans         &trans         &trans          &trans &trans
+                &kp LS(F4) &kp N1          &kp N2      &kp N3    &kp N4     &kp N5    /*|*/   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &trans &trans
+                &kp F4     &kp N6          &kp N7      &kp N8    &kp N9     &kp N0    /*|*/   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &trans &trans
+                                           &mkp MB4    &mkp MB5  &trans     &trans    /*|*/   &trans         &mkp MCLK      &mkp LCLK      &mkp RCLK
             >;
         };
 
-        layer_4 {
-            status = "reserved";
+        system_4 {
+            bindings = <
+                &none      &studio_unlock  &trans &trans &trans &sys_reset          /*|*/      &sys_reset &trans &trans &trans &trans &trans
+                &bt BT_CLR &trans          &trans &trans &trans &trans              /*|*/      &trans     &trans &trans &trans &trans &trans
+                &bt BT_PRV &bt BT_NXT      &trans &trans &trans &trans              /*|*/      &trans     &trans &trans &trans &trans &trans
+                                           &trans &trans &trans &bootloader         /*|*/      &bootloader     &trans &trans &trans
+            >;
         };
 
         layer_5 {
