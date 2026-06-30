@@ -131,19 +131,19 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp TAB         &kp Q   &kp W     &kp E    &kp R       &kp T         /*|*/      &kp Y   &kp U       &kp I      &kp O         &kp P          &kp BKSP
-                &mt HYPER ESC   &kp A   &kp S     &kp D    &kp F       &kp G         /*|*/      &kp H   &kp J       &kp K      &kp L         &kp APOSTROPHE &kp ENTER
-                &mt LSHIFT LPAR &lt 1 Z &kp X     &kp C    &kp V       &kp B         /*|*/      &kp N   &kp M       &kp SEMI   &kp BACKSLASH &kp SLASH      &mt RSHIFT RPAR
-                                        &kp LCTRL &kp LCMD &lt 3 SPACE &kp LALT      /*|*/      &kp F12 &lt 1 COMMA &lt 2 DOT  &kp GRAVE
+                &kp TAB         &kp Q       &kp W     &kp E    &kp R       &kp T           /*|*/      &kp Y   &kp U       &kp I      &kp O              &kp P           &kp BKSP
+                &mt HYPER ESC   &kp A       &kp S     &kp D    &kp F       &kp G           /*|*/      &kp H   &kp J       &kp K      &kp L              &kp APOSTROPHE  &kp ENTER
+                &mt LSHIFT LPAR &mt LCTRL Z &kp X     &kp C    &kp V       &kp B           /*|*/      &kp N   &kp M       &kp SEMI   &kp MINUS          &mt RCTRL SLASH &mt RSHIFT RPAR
+                                            &kp LALT  &kp LCMD &lt 3 SPACE &lt 2 GRAVE     /*|*/      &kp F12 &lt 1 COMMA &lt 2 DOT  &kp UNDERSCORE
             >;
         };
 
         numbers_1 {
             bindings = <
-                &trans &trans           &kp N7 &kp N8  &kp N9 &trans            /*|*/  &trans    &kp N7 &kp N8  &kp N9 &kp EQUAL    &trans
-                &trans &kp LEFT_BRACE   &kp N4 &kp N5  &kp N6 &kp RIGHT_BRACE   /*|*/  &kp PLUS  &kp N4 &kp N5  &kp N6 &kp ASTERISK &trans
-                &trans &kp LEFT_BRACKET &kp N1 &kp N2  &kp N3 &kp RIGHT_BRACKET /*|*/  &kp MINUS &kp N1 &kp N2  &kp N3 &kp SLASH    &trans
-                                        &kp N0 &kp DOT &trans &trans            /*|*/  &trans    &trans &kp DOT &kp N0
+                &trans &trans &kp N7 &kp N8  &kp N9 &trans   /*|*/   &kp BACKSLASH &kp N7 &kp N8  &kp N9 &kp EQUAL    &trans
+                &trans &trans &kp N4 &kp N5  &kp N6 &trans   /*|*/   &kp PLUS      &kp N4 &kp N5  &kp N6 &kp ASTERISK &trans
+                &trans &trans &kp N1 &kp N2  &kp N3 &trans   /*|*/   &kp MINUS     &kp N1 &kp N2  &kp N3 &kp SLASH    &trans
+                              &kp N0 &kp DOT &trans &trans   /*|*/   &trans        &trans &kp DOT &kp N0
             >;
         };
 
@@ -159,10 +159,10 @@
 
         mouse_3 {
             bindings = <
-                &mo 4      &kp EXCLAMATION &kp AT_SIGN &kp CARET &kp DOLLAR &trans    /*|*/   &trans         &trans         &trans         &trans          &trans &trans
-                &kp LS(F4) &kp N1          &kp N2      &kp N3    &kp N4     &kp N5    /*|*/   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &trans &trans
-                &kp F4     &kp N6          &kp N7      &kp N8    &kp N9     &kp N0    /*|*/   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &trans &trans
-                                           &mkp MB4    &mkp MB5  &trans     &trans    /*|*/   &trans         &mkp MCLK      &mkp LCLK      &mkp RCLK
+                &mo 4      &kp EXCLAMATION &kp AT_SIGN &kp CARET &kp DOLLAR &kp DOUBLE_QUOTES   /*|*/   &trans         &trans         &trans         &trans          &trans &trans
+                &kp LS(F4) &kp N1          &kp N2      &kp N3    &kp N4     &kp N5              /*|*/   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &trans &trans
+                &kp F4     &kp N6          &kp N7      &kp N8    &kp N9     &kp N0              /*|*/   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &trans &trans
+                                           &mkp MB4    &mkp MB5  &trans     &trans              /*|*/   &trans         &mkp MCLK      &mkp LCLK      &mkp RCLK
             >;
         };
 
