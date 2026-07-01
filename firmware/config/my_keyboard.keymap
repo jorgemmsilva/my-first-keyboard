@@ -15,7 +15,17 @@
 
 / {
     behaviors {
+      lt_slow: lt_slow {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
 
+        flavor = "balanced";
+        tapping-term-ms = <220>;
+        quick-tap-ms = <0>;
+        require-prior-idle-ms = <0>;
+
+        bindings = <&mo>, <&kp>;
+      };
     };
 
     combos {
@@ -37,29 +47,29 @@
             bindings = <&kp ENTER>;
         };
 
-        // BKSP on yu
+        // BKSP on ui
         combo_bksp {
             timeout-ms = <50>;
-            key-positions = <4 5>;
+            key-positions = <7 8>;
             layers = <0>;
-            bindings = <&kp DEL>;
+            bindings = <&kp BKSP>;
         };
         
         // DEL on rt
         combo_del {
             timeout-ms = <50>;
-            key-positions = <6 7>;
+            key-positions = <3 4>;
             layers = <0>;
-            bindings = <&kp BKSP>;
+            bindings = <&kp DEL>;
         };
 
-        // - on ui
-        combo_minus {
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-            layers = <0>;
-            bindings = <&kp MINUS>;
-        };
+        /* // - on ui */
+        /* combo_minus { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <7 8>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp MINUS>; */
+        /* }; */
 
         // + on io
         combo_plus {
@@ -131,10 +141,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp TAB         &kp Q       &kp W     &kp E    &kp R       &kp T           /*|*/      &kp Y   &kp U       &kp I      &kp O          &kp P           &kp BKSP
-                &mt HYPER ESC   &kp A       &kp S     &kp D    &kp F       &kp G           /*|*/      &kp H   &kp J       &kp K      &kp L          &kp APOSTROPHE  &kp ENTER
-                &mt LSHIFT LPAR &mt LCTRL Z &kp X     &kp C    &kp V       &kp B           /*|*/      &kp N   &kp M       &kp SEMI   &kp UNDERSCORE &mt RCTRL SLASH &mt RSHIFT RPAR
-                                            &kp LALT  &kp LCMD &lt 3 SPACE &lt 2 GRAVE     /*|*/      &kp F12 &lt 1 COMMA &lt 2 DOT  &kp MINUS
+                &kp TAB         &kp Q       &kp W     &kp E    &kp R            &kp T           /*|*/      &kp Y   &kp U       &kp I      &kp O          &kp P           &kp BKSP
+                &mt HYPER ESC   &kp A       &kp S     &kp D    &kp F            &kp G           /*|*/      &kp H   &kp J       &kp K      &kp L          &kp APOSTROPHE  &kp ENTER
+                &mt LSHIFT LPAR &mt LCTRL Z &kp X     &kp C    &kp V            &kp B           /*|*/      &kp N   &kp M       &kp SEMI   &kp UNDERSCORE &mt RCTRL SLASH &mt RSHIFT RPAR
+                                            &kp LALT  &kp LCMD &lt_slow 3 SPACE &lt 2 GRAVE     /*|*/      &kp F12 &lt 1 COMMA &lt 2 DOT  &lt 3 MINUS
             >;
         };
 
@@ -166,6 +176,7 @@
             >;
         };
 
+        /* only reacheable via layer 3*/
         system_4 {
             bindings = <
                 &none      &studio_unlock  &trans &trans &trans &sys_reset          /*|*/      &sys_reset &trans &trans &trans &trans &trans
