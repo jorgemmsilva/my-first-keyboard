@@ -10,7 +10,7 @@
 #define HYPER LS(LC(LA(LGUI)))
 
 &lt {
-    tapping-term-ms = <140>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -169,9 +169,9 @@
 
         mouse_3 {
             bindings = <
-                &mo 4      &kp EXCLAMATION &kp AT_SIGN &kp CARET &kp DOLLAR &kp DOUBLE_QUOTES   /*|*/   &trans         &trans         &trans         &trans          &trans &trans
-                &kp LS(F4) &kp N1          &kp N2      &kp N3    &kp N4     &kp N5              /*|*/   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &trans &trans
-                &kp F4     &kp N6          &kp N7      &kp N8    &kp N9     &kp N0              /*|*/   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &trans &trans
+                &mo 4  &kp EXCLAMATION &kp AT_SIGN &kp CARET &kp DOLLAR &kp DOUBLE_QUOTES   /*|*/   &kp HASH       &kp PERCENT         &trans         &trans          &trans &trans
+                &trans &kp N1          &kp N2      &kp N3    &kp N4     &kp N5              /*|*/   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &kp LS(F4) &trans
+                &trans &kp N6          &kp N7      &kp N8    &kp N9     &kp N0              /*|*/   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &kp F4     &trans
                                            &mkp MB4    &mkp MB5  &trans     &trans              /*|*/   &trans         &mkp MCLK      &mkp LCLK      &mkp RCLK
             >;
         };
