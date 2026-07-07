@@ -10,7 +10,11 @@
 #define HYPER LS(LC(LA(LGUI)))
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <140>;
+};
+
+&mt {
+    tapping-term-ms = <140>;
 };
 
 / {
@@ -26,6 +30,19 @@
 
         bindings = <&mo>, <&kp>;
       };
+
+      mt_slow: mt_slow {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+
+        flavor = "balanced";
+        tapping-term-ms = <220>;
+        quick-tap-ms = <0>;
+        require-prior-idle-ms = <0>;
+
+        bindings = <&kp>, <&kp>;
+      };
+
     };
 
     combos {
@@ -141,38 +158,38 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp TAB         &kp Q       &kp W     &kp E    &kp R            &kp T           /*|*/      &kp Y   &kp U       &kp I      &kp O          &kp P           &kp BKSP
-                &mt HYPER ESC   &kp A       &kp S     &kp D    &kp F            &kp G           /*|*/      &kp H   &kp J       &kp K      &kp L          &kp APOSTROPHE  &kp ENTER
-                &mt LSHIFT LPAR &mt LCTRL Z &kp X     &kp C    &kp V            &kp B           /*|*/      &kp N   &kp M       &kp SEMI   &kp UNDERSCORE &mt RCTRL SLASH &mt RSHIFT RPAR
-                                            &kp LALT  &kp LCMD &lt_slow 3 SPACE &lt 2 GRAVE     /*|*/      &kp F12 &lt 1 COMMA &lt 2 DOT  &lt 3 MINUS
+                &kp TAB         &kp Q       &kp W     &kp E    &kp R            &kp T           /*|*/      &kp Y   &kp U            &kp I           &kp O            &kp P                &kp BKSP
+                &mt HYPER ESC   &kp A       &kp S     &kp D    &kp F            &kp G           /*|*/      &kp H   &kp J            &kp K           &kp L            &kp APOSTROPHE       &kp ENTER
+                &mt LSHIFT LPAR &mt LCTRL Z &kp X     &kp C    &kp V            &kp B           /*|*/      &kp N   &kp M            &kp SEMI        &kp BACKSLASH    &mt_slow RCTRL SLASH &mt RSHIFT RPAR
+                                            &kp LALT  &kp LCMD &lt_slow 3 SPACE &lt 2 GRAVE     /*|*/      &kp F12 &lt_slow 1 COMMA &lt_slow 2 DOT  &lt_slow 3 MINUS
             >;
         };
 
         numbers_1 {
             bindings = <
-                &trans &trans &kp N7 &kp N8  &kp N9 &trans   /*|*/   &kp BACKSLASH &kp N7 &kp N8  &kp N9 &kp EQUAL    &trans
-                &trans &trans &kp N4 &kp N5  &kp N6 &trans   /*|*/   &kp PLUS      &kp N4 &kp N5  &kp N6 &kp ASTERISK &trans
-                &trans &trans &kp N1 &kp N2  &kp N3 &trans   /*|*/   &kp MINUS     &kp N1 &kp N2  &kp N3 &kp SLASH    &trans
-                              &kp N0 &kp DOT &trans &trans   /*|*/   &trans        &trans &kp DOT &kp N0
+                &trans &trans &trans &trans  &trans &trans   /*|*/   &kp PLUS      &kp N7 &kp N8  &kp N9 &kp ASTERISK &trans
+                &trans &trans &trans &trans  &trans &trans   /*|*/   &kp EQUAL     &kp N4 &kp N5  &kp N6 &kp PERCENT  &trans
+                &trans &trans &trans &trans  &trans &trans   /*|*/   &kp MINUS     &kp N1 &kp N2  &kp N3 &kp SLASH    &trans
+                              &trans &trans  &trans &trans   /*|*/   &trans        &trans &kp DOT &kp N0
             >;
         };
 
         nav_2 {
             bindings = <
-                &trans &trans  &kp F7 &kp F8 &kp F9  &kp F12  /*|*/  &trans        &kp END       &kp HOME  &trans           &trans       &trans
-                &trans &trans  &kp F4 &kp F5 &kp F6  &kp F11  /*|*/  &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT        &kp C_VOL_UP &kp C_BRI_INC
-                &trans &trans  &kp F1 &kp F2 &kp F3  &kp F10  /*|*/  &trans        &kp PG_DN     &kp PG_UP &trans           &kp C_VOL_DN &kp C_BRI_DEC
-                               &trans &trans &trans  &trans   /*|*/  &kp LC(PG_UP) &kp LC(PG_DN) &trans    &kp C_PLAY_PAUSE
+                &trans &trans  &trans &trans &kp F11 &kp F12   /*|*/  &trans        &kp END       &kp HOME  &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans
+                &trans &kp F1  &kp F2 &kp F3 &kp F4  &kp F5    /*|*/  &kp LEFT      &kp DOWN      &kp UP    &kp RIGHT        &kp C_VOL_UP      &kp C_BRI_INC
+                &trans &kp F6  &kp F7 &kp F8 &kp F9  &kp F10   /*|*/  &trans        &kp PG_DN     &kp PG_UP &trans           &kp C_VOL_DN      &kp C_BRI_DEC
+                               &trans &trans &trans  &trans    /*|*/  &kp LC(PG_UP) &kp LC(PG_DN) &trans    &kp C_PLAY_PAUSE
             >;
 
         };
 
         mouse_3 {
             bindings = <
-                &mo 4  &kp EXCLAMATION &kp AT_SIGN &kp CARET &kp DOLLAR &kp DOUBLE_QUOTES   /*|*/   &kp HASH       &kp PERCENT         &trans         &trans          &trans &trans
-                &trans &kp N1          &kp N2      &kp N3    &kp N4     &kp N5              /*|*/   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &kp LS(F4) &trans
-                &trans &kp N6          &kp N7      &kp N8    &kp N9     &kp N0              /*|*/   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &kp F4     &trans
-                                           &mkp MB4    &mkp MB5  &trans     &trans              /*|*/   &trans         &mkp MCLK      &mkp LCLK      &mkp RCLK
+                &mo 4  &kp EXCLAMATION &kp AT_SIGN &kp CARET &kp DOLLAR &kp DOUBLE_QUOTES       /*|*/   &trans         &mkp MB4       &mkp MB5       &trans          &trans &trans
+                &trans &kp N1          &kp N2      &kp N3    &kp N4     &kp N5                  /*|*/   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &kp LS(F4) &trans
+                &trans &kp N6          &kp N7      &kp N8    &kp N9     &kp N0                  /*|*/   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &kp F4     &trans
+                                       &trans      &trans    &trans     &trans                  /*|*/   &trans         &mkp MCLK      &mkp LCLK      &mkp RCLK
             >;
         };
 
