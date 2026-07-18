@@ -64,10 +64,10 @@
             bindings = <&kp ENTER>;
         };
 
-        // BKSP on ui
+        // BKSP on yu
         combo_bksp {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <6 7>;
             layers = <0>;
             bindings = <&kp BKSP>;
         };
@@ -75,10 +75,19 @@
         // DEL on rt
         combo_del {
             timeout-ms = <50>;
-            key-positions = <3 4>;
+            key-positions = <4 5>;
             layers = <0>;
             bindings = <&kp DEL>;
         };
+
+        // ! on qw
+        combo_exclamation {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            layers = <0>;
+            bindings = <&kp EXCLAMATION>;
+        };
+
 
         /* // - on ui */
         /* combo_minus { */
