@@ -81,20 +81,20 @@
         };
 
         // ENTER on jk
-        combo_enter {
-            timeout-ms = <50>;
-            key-positions = <19 20>;
-            layers = <0>;
-            bindings = <&kp ENTER>;
-        };
+        /* combo_enter { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <19 20>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp ENTER>; */
+        /* }; */
 
         // BKSP on yu
-        combo_bksp {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            layers = <0>;
-            bindings = <&kp BKSP>;
-        };
+        /* combo_bksp { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <6 7>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp BKSP>; */
+        /* }; */
         
         // DEL on rt
         combo_del {
@@ -122,20 +122,20 @@
         /* }; */
 
         // + on io
-        combo_plus {
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            layers = <0>;
-            bindings = <&kp PLUS>;
-        };
+        /* combo_plus { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <8 9>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp PLUS>; */
+        /* }; */
 
         // = on l'
-        combo_eq {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            layers = <0>;
-            bindings = <&kp EQUAL>;
-        };
+        /* combo_eq { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <21 22>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp EQUAL>; */
+        /* }; */
 
 
         // &| on sd / xc
@@ -154,33 +154,33 @@
 
 
         // {} on fg / hj
-        combo_lbrace {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            layers = <0>;
-            bindings = <&kp LEFT_BRACE>;
-        };
-        combo_rbrace {
-            timeout-ms = <50>;
-            key-positions = <18 19>;
-            layers = <0>;
-            bindings = <&kp RIGHT_BRACE>;
-        };
+        /* combo_lbrace { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <16 17>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp LEFT_BRACE>; */
+        /* }; */
+        /* combo_rbrace { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <18 19>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp RIGHT_BRACE>; */
+        /* }; */
 
 
         // [] on vb / nm
-        combo_lbracket {
-            timeout-ms = <50>;
-            key-positions = <28 29>;
-            layers = <0>;
-            bindings = <&kp LEFT_BRACKET>;
-        };
-        combo_rbracket {
-            timeout-ms = <50>;
-            key-positions = <30 31>;
-            layers = <0>;
-            bindings = <&kp RIGHT_BRACKET>;
-        };
+        /* combo_lbracket { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <28 29>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp LEFT_BRACKET>; */
+        /* }; */
+        /* combo_rbracket { */
+        /*     timeout-ms = <50>; */
+        /*     key-positions = <30 31>; */
+        /*     layers = <0>; */
+        /*     bindings = <&kp RIGHT_BRACKET>; */
+        /* }; */
 
     };
 
@@ -194,7 +194,7 @@
                 &kp TAB             &kp Q       &kp W     &kp E    &kp R            &kp T           /*|*/      &kp Y   &kp U            &kp I           &kp O            &kp P                &kp BKSP
                 &mt_slow HYPER ESC  &kp A       &kp S     &kp D    &kp F            &kp G           /*|*/      &kp H   &kp J            &kp K           &kp L            &kp APOSTROPHE       &kp ENTER
                 &mt LSHIFT LPAR     &mt LCTRL Z &kp X     &kp C    &kp V            &kp B           /*|*/      &kp N   &kp M            &kp SEMI        &kp BACKSLASH    &mt_slow RCTRL SLASH &mt RSHIFT RPAR
-                                                &kp LALT  &kp LCMD &lt_slow 4 SPACE &lt 3 GRAVE     /*|*/      &kp F12 &lt_slow 1 COMMA &lt 3 DOT  &lt_slow 4 MINUS
+                                                &kp LALT  &kp LCMD &lt_slow 4 SPACE &lt 3 GRAVE     /*|*/      &kp F12 &lt_slow 2 COMMA &lt 3 DOT  &lt_slow 4 MINUS
             >;
         };
 
