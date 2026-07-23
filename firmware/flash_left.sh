@@ -28,7 +28,7 @@ cp -f "$UF2" "$VOL/" >/dev/null 2>&1 || true
 # Best-effort flush
 sync >/dev/null 2>&1 || true
 
-echo "done (copy attempted; errors ignored)"
+echo "done (copy $UF2 attempted; errors ignored)"
 
 
 
