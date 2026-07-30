@@ -11,19 +11,33 @@
 
 &lt {
     tapping-term-ms = <140>;
+    flavor = "tap-preferred";
 };
 
 &mt {
     tapping-term-ms = <140>;
+    flavor = "tap-preferred";
 };
 
 / {
+    macros {
+      hyper_space: hyper_space {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+          &macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI
+          &macro_tap &kp SPACE
+          &macro_release &kp LGUI &kp LALT &kp LCTRL &kp LSHFT
+        >;
+      };
+    };
+
     behaviors {
       lt_slow: lt_slow {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
 
-        flavor = "balanced";
+        flavor = "tap-preferred";
         tapping-term-ms = <220>;
         quick-tap-ms = <0>;
         require-prior-idle-ms = <0>;
@@ -67,13 +81,13 @@
             bindings = <&kp ESC>;
         };
 
-        // ENTER on jk
-        /* combo_enter { */
-        /*     timeout-ms = <50>; */
-        /*     key-positions = <19 20>; */
-        /*     layers = <0>; */
-        /*     bindings = <&kp ENTER>; */
-        /* }; */
+        // HYPER+SPACE on jk
+        combo_hyperspace {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            layers = <0>;
+            bindings = <&hyper_space>;
+        };
 
         // BKSP on yu
         /* combo_bksp { */
