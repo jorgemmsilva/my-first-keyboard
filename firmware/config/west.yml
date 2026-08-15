@@ -15,12 +15,14 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
+      # revision: main
       path: zmk
       import: app/west.yml
     - name: nice-view-gem
       remote: M165437
-      revision: main
+      revision: v0.3.0
+      # revision: main
       path: deps/nice-view-gem
     - name: hammerbeam-slideshow
       remote: gpeye
