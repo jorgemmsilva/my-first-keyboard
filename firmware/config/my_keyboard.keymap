@@ -195,7 +195,7 @@
                 &kp TAB             &kp Q       &kp W     &kp E    &kp R            &kp T           /*|*/      &kp Y   &kp U            &kp I           &kp O            &kp P                &kp BKSP
                 &mt_slow HYPER ESC  &kp A       &kp S     &kp D    &kp F            &kp G           /*|*/      &kp H   &kp J            &kp K           &kp L            &kp APOSTROPHE       &kp ENTER
                 &mt LSHIFT LPAR     &mt LCTRL Z &kp X     &kp C    &kp V            &kp B           /*|*/      &kp N   &kp M            &kp SEMI        &kp BACKSLASH    &mt_slow RCTRL SLASH &mt RSHIFT RPAR
-                                                &kp LALT  &kp LCMD &lt_slow 4 SPACE &lt 3 GRAVE     /*|*/      &kp F12 &lt_slow 2 COMMA &lt 3 DOT  &lt_slow 4 MINUS
+                                                &kp LALT  &kp LCMD &lt_slow 4 SPACE &lt 3 GRAVE     /*|*/      &kp F12 &lt_slow 2 COMMA &lt 3 DOT       &lt_slow 4 MINUS
             >;
         };
 
@@ -244,7 +244,7 @@
         system_5 {
             display-name = "System";
             bindings = <
-                &none      &studio_unlock  &trans &trans &trans &sys_reset          /*|*/      &sys_reset  &trans &trans &trans &trans &to 0
+                &none      &studio_unlock  &trans &trans &trans &trans              /*|*/      &trans      &trans &trans &trans &trans &to 0
                 &bt BT_CLR &trans          &trans &trans &trans &trans              /*|*/      &trans      &trans &trans &trans &trans &to 1
                 &bt BT_PRV &bt BT_NXT      &trans &trans &trans &trans              /*|*/      &trans      &trans &trans &trans &trans &trans
                                            &trans &trans &trans &bootloader         /*|*/      &bootloader &trans &trans &trans
