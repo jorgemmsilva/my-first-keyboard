@@ -192,10 +192,10 @@
         default_layer {
             display-name = "MacOS";
             bindings = <
-                &kp TAB             &kp Q       &kp W     &kp E    &kp R            &kp T           /*|*/      &kp Y   &kp U            &kp I           &kp O            &kp P                &kp BKSP
-                &mt_slow HYPER ESC  &kp A       &kp S     &kp D    &kp F            &kp G           /*|*/      &kp H   &kp J            &kp K           &kp L            &kp APOSTROPHE       &kp ENTER
-                &mt LSHIFT LPAR     &mt LCTRL Z &kp X     &kp C    &kp V            &kp B           /*|*/      &kp N   &kp M            &kp SEMI        &kp BACKSLASH    &mt_slow RCTRL SLASH &mt RSHIFT RPAR
-                                                &kp LALT  &kp LCMD &lt_slow 4 SPACE &lt 3 GRAVE     /*|*/      &kp F12 &lt 2 COMMA      &lt 3 DOT       &lt_slow 4 MINUS
+                &kp TAB            &kp Q        &kp W     &kp E    &kp R            &kp T           /*|*/      &kp Y   &kp U            &kp I           &kp O            &kp P                &kp BKSP
+                &mt_slow HYPER ESC &kp A        &kp S     &kp D    &kp F            &kp G           /*|*/      &kp H   &kp J            &kp K           &kp L            &kp APOSTROPHE       &kp ENTER
+                &mt LCTRL LPAR     &mt LSHIFT Z &kp X     &kp C    &kp V            &kp B           /*|*/      &kp N   &kp M            &kp SEMI        &kp BACKSLASH    &mt_slow RCTRL SLASH &mt RSHIFT RPAR
+                                                 &kp LALT  &kp LCMD &lt_slow 4 SPACE &lt 3 GRAVE     /*|*/      &kp F12 &lt 2 COMMA      &lt 3 DOT       &lt_slow 4 MINUS
             >;
         };
 
